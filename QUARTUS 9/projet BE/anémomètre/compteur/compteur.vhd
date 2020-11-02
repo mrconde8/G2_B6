@@ -1,0 +1,38 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+
+entity compteur is
+	port (
+		RAZ : in std_logic;
+		gnr_1hz : in std_logic;
+		f_anemo : in std_logic;
+		Data_in : out std_logic_vector(7 downto 0)
+	);
+end entity;
+
+architecture arch_counter of compteur IS 
+
+	signal count : std_logic_vector (7 downto 0);
+	signal stop : std_logic_vector (7 downto 0);
+	begin
+	compteur: process (RAZ, gnr_1hz, f_anemo) 
+	begin
+		if RAZ = '1' then
+			count <= (others => '0');
+		elsif f_anemo = '1' and f_anemo'event then
+			if gnr_1hz = '1' then
+			count <= count + 1;
+			
+			else count <= (others => '0');
+			end if;
+		end if;
+	end process;
+	process(gnr_1hz )
+	begin
+	if gnr_1hz = '0' and gnr_1hz'event then
+	stop <= count;
+	end if;
+	end process;
+	Data_in <= stop;
+end arch_counter ;

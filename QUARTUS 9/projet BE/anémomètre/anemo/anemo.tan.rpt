@@ -1,0 +1,577 @@
+Classic Timing Analyzer report for anemo
+Tue Oct 06 09:57:30 2020
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'f_anemo'
+  7. Clock Setup: 'clk_50M'
+  8. tsu
+  9. tco
+ 10. tpd
+ 11. th
+ 12. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                  ;
++------------------------------+-------+---------------+------------------------------------------------+---------------------------+-------------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                                    ; From                      ; To                            ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+------------------------------------------------+---------------------------+-------------------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 1.683 ns                                       ; RAZ                       ; gene_1hz:diviseur|sig_clk_out ; --         ; clk_50M  ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 10.108 ns                                      ; compteur:counter|stop[7]  ; data_anemometre[7]            ; clk_50M    ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 11.562 ns                                      ; start_stop                ; data_valid                    ; --         ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -1.453 ns                                      ; RAZ                       ; gene_1hz:diviseur|sig_clk_out ; --         ; clk_50M  ; 0            ;
+; Clock Setup: 'clk_50M'       ; N/A   ; None          ; 287.11 MHz ( period = 3.483 ns )               ; gene_1hz:diviseur|div[0]  ; gene_1hz:diviseur|div[26]     ; clk_50M    ; clk_50M  ; 0            ;
+; Clock Setup: 'f_anemo'       ; N/A   ; None          ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[0] ; compteur:counter|count[7]     ; f_anemo    ; f_anemo  ; 0            ;
+; Total number of failed paths ;       ;               ;                                                ;                           ;                               ;            ;          ; 0            ;
++------------------------------+-------+---------------+------------------------------------------------+---------------------------+-------------------------------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EP2C35F672C6       ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; f_anemo         ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; clk_50M         ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'f_anemo'                                                                                                                                                                                                     ;
++-------+------------------------------------------------+---------------------------+---------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From                      ; To                        ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+---------------------------+---------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[0] ; compteur:counter|count[7] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.620 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[0] ; compteur:counter|count[6] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.549 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[1] ; compteur:counter|count[7] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.549 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[2] ; compteur:counter|count[7] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.489 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[0] ; compteur:counter|count[5] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.478 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[1] ; compteur:counter|count[6] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.478 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[3] ; compteur:counter|count[7] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.453 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[2] ; compteur:counter|count[6] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.418 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[0] ; compteur:counter|count[4] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.407 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[1] ; compteur:counter|count[5] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.407 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[3] ; compteur:counter|count[6] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.382 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[2] ; compteur:counter|count[5] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.347 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[4] ; compteur:counter|count[7] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.347 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[0] ; compteur:counter|count[3] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.336 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[1] ; compteur:counter|count[4] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.336 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[5] ; compteur:counter|count[7] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.312 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[3] ; compteur:counter|count[5] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.311 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[2] ; compteur:counter|count[4] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.276 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[4] ; compteur:counter|count[6] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.276 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[0] ; compteur:counter|count[2] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.265 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[1] ; compteur:counter|count[3] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.265 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[5] ; compteur:counter|count[6] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.241 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[6] ; compteur:counter|count[7] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.241 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[3] ; compteur:counter|count[4] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.240 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[2] ; compteur:counter|count[3] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.205 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[4] ; compteur:counter|count[5] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.205 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[0] ; compteur:counter|count[1] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.194 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[1] ; compteur:counter|count[2] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 1.194 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[5] ; compteur:counter|count[5] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 0.855 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[6] ; compteur:counter|count[6] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 0.855 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[3] ; compteur:counter|count[3] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 0.854 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[2] ; compteur:counter|count[2] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 0.822 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[4] ; compteur:counter|count[4] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 0.822 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[7] ; compteur:counter|count[7] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 0.822 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[0] ; compteur:counter|count[0] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 0.811 ns                ;
+; N/A   ; Restricted to 450.05 MHz ( period = 2.222 ns ) ; compteur:counter|count[1] ; compteur:counter|count[1] ; f_anemo    ; f_anemo  ; None                        ; None                      ; 0.811 ns                ;
++-------+------------------------------------------------+---------------------------+---------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clk_50M'                                                                                                                                                                                                                                            ;
++-----------------------------------------+-----------------------------------------------------+---------------------------+---------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack                                   ; Actual fmax (period)                                ; From                      ; To                        ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-----------------------------------------+-----------------------------------------------------+---------------------------+---------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A                                     ; 287.11 MHz ( period = 3.483 ns )                    ; gene_1hz:diviseur|div[0]  ; gene_1hz:diviseur|div[26] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.259 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 287.60 MHz ( period = 3.477 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.263 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 292.23 MHz ( period = 3.422 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.208 ns                ;
+; N/A                                     ; 293.08 MHz ( period = 3.412 ns )                    ; gene_1hz:diviseur|div[0]  ; gene_1hz:diviseur|div[25] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.188 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 293.43 MHz ( period = 3.408 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.204 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 294.12 MHz ( period = 3.400 ns )                    ; gene_1hz:diviseur|div[7]  ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.186 ns                ;
+; N/A                                     ; 296.47 MHz ( period = 3.373 ns )                    ; gene_1hz:diviseur|div[1]  ; gene_1hz:diviseur|div[26] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.149 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 297.89 MHz ( period = 3.357 ns )                    ; gene_1hz:diviseur|div[16] ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.153 ns                ;
+; N/A                                     ; 299.22 MHz ( period = 3.342 ns )                    ; gene_1hz:diviseur|div[2]  ; gene_1hz:diviseur|div[26] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.118 ns                ;
+; N/A                                     ; 299.31 MHz ( period = 3.341 ns )                    ; gene_1hz:diviseur|div[0]  ; gene_1hz:diviseur|div[24] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.117 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[17] ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.130 ns                ;
+; N/A                                     ; 299.94 MHz ( period = 3.334 ns )                    ; gene_1hz:diviseur|div[8]  ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.120 ns                ;
+; N/A                                     ; 302.85 MHz ( period = 3.302 ns )                    ; gene_1hz:diviseur|div[1]  ; gene_1hz:diviseur|div[25] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.078 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 303.86 MHz ( period = 3.291 ns )                    ; gene_1hz:diviseur|div[12] ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.077 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[25] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[26] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[24] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[23] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[16] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[17] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[18] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[19] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[21] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[20] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[22] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[15] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[14] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.34 MHz ( period = 3.275 ns )                    ; gene_1hz:diviseur|div[6]  ; gene_1hz:diviseur|div[13] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 305.72 MHz ( period = 3.271 ns )                    ; gene_1hz:diviseur|div[2]  ; gene_1hz:diviseur|div[25] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.047 ns                ;
+; N/A                                     ; 305.72 MHz ( period = 3.271 ns )                    ; gene_1hz:diviseur|div[3]  ; gene_1hz:diviseur|div[26] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.047 ns                ;
+; N/A                                     ; 305.81 MHz ( period = 3.270 ns )                    ; gene_1hz:diviseur|div[0]  ; gene_1hz:diviseur|div[23] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.046 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 307.22 MHz ( period = 3.255 ns )                    ; gene_1hz:diviseur|div[13] ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.051 ns                ;
+; N/A                                     ; 309.50 MHz ( period = 3.231 ns )                    ; gene_1hz:diviseur|div[1]  ; gene_1hz:diviseur|div[24] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.007 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.69 MHz ( period = 3.229 ns )                    ; gene_1hz:diviseur|div[11] ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.015 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 309.98 MHz ( period = 3.226 ns )                    ; gene_1hz:diviseur|div[19] ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.022 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[25] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[26] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[24] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[23] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[16] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[17] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[18] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[19] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[21] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[20] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[22] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[15] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[14] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 310.56 MHz ( period = 3.220 ns )                    ; gene_1hz:diviseur|div[9]  ; gene_1hz:diviseur|div[13] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.996 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[10] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[6]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[7]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[8]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[9]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[11] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[12] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[5]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[4]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[3]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[2]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[1]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.24 MHz ( period = 3.213 ns )                    ; gene_1hz:diviseur|div[21] ; gene_1hz:diviseur|div[0]  ; clk_50M    ; clk_50M  ; None                        ; None                      ; 3.009 ns                ;
+; N/A                                     ; 311.92 MHz ( period = 3.206 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[19] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.992 ns                ;
+; N/A                                     ; 311.92 MHz ( period = 3.206 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[21] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.992 ns                ;
+; N/A                                     ; 311.92 MHz ( period = 3.206 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[20] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.992 ns                ;
+; N/A                                     ; 311.92 MHz ( period = 3.206 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[22] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.992 ns                ;
+; N/A                                     ; 311.92 MHz ( period = 3.206 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[15] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.992 ns                ;
+; N/A                                     ; 311.92 MHz ( period = 3.206 ns )                    ; gene_1hz:diviseur|div[15] ; gene_1hz:diviseur|div[14] ; clk_50M    ; clk_50M  ; None                        ; None                      ; 2.992 ns                ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                           ;                           ;            ;          ;                             ;                           ;                         ;
++-----------------------------------------+-----------------------------------------------------+---------------------------+---------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; tsu                                                                                 ;
++-------+--------------+------------+------+-------------------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From ; To                            ; To Clock ;
++-------+--------------+------------+------+-------------------------------+----------+
+; N/A   ; None         ; 1.683 ns   ; RAZ  ; gene_1hz:diviseur|sig_clk_out ; clk_50M  ;
++-------+--------------+------------+------+-------------------------------+----------+
+
+
++------------------------------------------------------------------------------------------------+
+; tco                                                                                            ;
++-------+--------------+------------+--------------------------+--------------------+------------+
+; Slack ; Required tco ; Actual tco ; From                     ; To                 ; From Clock ;
++-------+--------------+------------+--------------------------+--------------------+------------+
+; N/A   ; None         ; 10.108 ns  ; compteur:counter|stop[7] ; data_anemometre[7] ; clk_50M    ;
+; N/A   ; None         ; 10.072 ns  ; compteur:counter|stop[6] ; data_anemometre[6] ; clk_50M    ;
+; N/A   ; None         ; 10.071 ns  ; compteur:counter|stop[5] ; data_anemometre[5] ; clk_50M    ;
+; N/A   ; None         ; 10.065 ns  ; compteur:counter|stop[4] ; data_anemometre[4] ; clk_50M    ;
+; N/A   ; None         ; 9.889 ns   ; compteur:counter|stop[1] ; data_anemometre[1] ; clk_50M    ;
+; N/A   ; None         ; 9.864 ns   ; compteur:counter|stop[0] ; data_anemometre[0] ; clk_50M    ;
+; N/A   ; None         ; 9.841 ns   ; compteur:counter|stop[2] ; data_anemometre[2] ; clk_50M    ;
+; N/A   ; None         ; 9.834 ns   ; compteur:counter|stop[3] ; data_anemometre[3] ; clk_50M    ;
++-------+--------------+------------+--------------------------+--------------------+------------+
+
+
++-------------------------------------------------------------------------------+
+; tpd                                                                           ;
++-------+-------------------+-----------------+------------+--------------------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From       ; To                 ;
++-------+-------------------+-----------------+------------+--------------------+
+; N/A   ; None              ; 11.562 ns       ; start_stop ; data_valid         ;
+; N/A   ; None              ; 10.686 ns       ; start_stop ; data_anemometre[7] ;
+; N/A   ; None              ; 10.648 ns       ; start_stop ; data_anemometre[6] ;
+; N/A   ; None              ; 10.642 ns       ; start_stop ; data_anemometre[5] ;
+; N/A   ; None              ; 10.642 ns       ; start_stop ; data_anemometre[4] ;
+; N/A   ; None              ; 10.466 ns       ; start_stop ; data_anemometre[1] ;
+; N/A   ; None              ; 10.439 ns       ; start_stop ; data_anemometre[0] ;
+; N/A   ; None              ; 10.413 ns       ; start_stop ; data_anemometre[2] ;
+; N/A   ; None              ; 10.406 ns       ; start_stop ; data_anemometre[3] ;
+; N/A   ; None              ; 7.662 ns        ; RAZ        ; data_valid         ;
+; N/A   ; None              ; 7.530 ns        ; continu    ; data_valid         ;
+; N/A   ; None              ; 6.794 ns        ; continu    ; data_anemometre[7] ;
+; N/A   ; None              ; 6.793 ns        ; RAZ        ; data_anemometre[7] ;
+; N/A   ; None              ; 6.756 ns        ; RAZ        ; data_anemometre[6] ;
+; N/A   ; None              ; 6.756 ns        ; continu    ; data_anemometre[6] ;
+; N/A   ; None              ; 6.750 ns        ; RAZ        ; data_anemometre[4] ;
+; N/A   ; None              ; 6.750 ns        ; continu    ; data_anemometre[4] ;
+; N/A   ; None              ; 6.749 ns        ; RAZ        ; data_anemometre[5] ;
+; N/A   ; None              ; 6.748 ns        ; continu    ; data_anemometre[5] ;
+; N/A   ; None              ; 6.574 ns        ; continu    ; data_anemometre[1] ;
+; N/A   ; None              ; 6.573 ns        ; RAZ        ; data_anemometre[1] ;
+; N/A   ; None              ; 6.547 ns        ; RAZ        ; data_anemometre[0] ;
+; N/A   ; None              ; 6.546 ns        ; continu    ; data_anemometre[0] ;
+; N/A   ; None              ; 6.516 ns        ; RAZ        ; data_anemometre[2] ;
+; N/A   ; None              ; 6.516 ns        ; continu    ; data_anemometre[2] ;
+; N/A   ; None              ; 6.510 ns        ; RAZ        ; data_anemometre[3] ;
+; N/A   ; None              ; 6.509 ns        ; continu    ; data_anemometre[3] ;
++-------+-------------------+-----------------+------------+--------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; th                                                                                        ;
++---------------+-------------+-----------+------+-------------------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From ; To                            ; To Clock ;
++---------------+-------------+-----------+------+-------------------------------+----------+
+; N/A           ; None        ; -1.453 ns ; RAZ  ; gene_1hz:diviseur|sig_clk_out ; clk_50M  ;
++---------------+-------------+-----------+------+-------------------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Oct 06 09:57:30 2020
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off anemo -c anemo --timing_analysis_only
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "f_anemo" is an undefined clock
+    Info: Assuming node "clk_50M" is an undefined clock
+Warning: Found 1 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "gene_1hz:diviseur|gnr_1hz" as buffer
+Info: Clock "f_anemo" Internal fmax is restricted to 450.05 MHz between source register "compteur:counter|count[0]" and destination register "compteur:counter|count[7]"
+    Info: fmax restricted to clock pin edge rate 2.222 ns. Expand message to see actual delay path.
+        Info: + Longest register to register delay is 1.620 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X64_Y11_N1; Fanout = 3; REG Node = 'compteur:counter|count[0]'
+            Info: 2: + IC(0.307 ns) + CELL(0.393 ns) = 0.700 ns; Loc. = LCCOMB_X64_Y11_N0; Fanout = 2; COMB Node = 'compteur:counter|count[0]~17'
+            Info: 3: + IC(0.000 ns) + CELL(0.071 ns) = 0.771 ns; Loc. = LCCOMB_X64_Y11_N2; Fanout = 2; COMB Node = 'compteur:counter|count[1]~19'
+            Info: 4: + IC(0.000 ns) + CELL(0.071 ns) = 0.842 ns; Loc. = LCCOMB_X64_Y11_N4; Fanout = 2; COMB Node = 'compteur:counter|count[2]~21'
+            Info: 5: + IC(0.000 ns) + CELL(0.071 ns) = 0.913 ns; Loc. = LCCOMB_X64_Y11_N6; Fanout = 2; COMB Node = 'compteur:counter|count[3]~23'
+            Info: 6: + IC(0.000 ns) + CELL(0.071 ns) = 0.984 ns; Loc. = LCCOMB_X64_Y11_N8; Fanout = 2; COMB Node = 'compteur:counter|count[4]~25'
+            Info: 7: + IC(0.000 ns) + CELL(0.071 ns) = 1.055 ns; Loc. = LCCOMB_X64_Y11_N10; Fanout = 2; COMB Node = 'compteur:counter|count[5]~27'
+            Info: 8: + IC(0.000 ns) + CELL(0.071 ns) = 1.126 ns; Loc. = LCCOMB_X64_Y11_N12; Fanout = 1; COMB Node = 'compteur:counter|count[6]~29'
+            Info: 9: + IC(0.000 ns) + CELL(0.410 ns) = 1.536 ns; Loc. = LCCOMB_X64_Y11_N14; Fanout = 1; COMB Node = 'compteur:counter|count[7]~30'
+            Info: 10: + IC(0.000 ns) + CELL(0.084 ns) = 1.620 ns; Loc. = LCFF_X64_Y11_N15; Fanout = 2; REG Node = 'compteur:counter|count[7]'
+            Info: Total cell delay = 1.313 ns ( 81.05 % )
+            Info: Total interconnect delay = 0.307 ns ( 18.95 % )
+        Info: - Smallest clock skew is 0.000 ns
+            Info: + Shortest clock path from clock "f_anemo" to destination register is 3.104 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.832 ns) = 0.832 ns; Loc. = PIN_J22; Fanout = 8; CLK Node = 'f_anemo'
+                Info: 2: + IC(1.735 ns) + CELL(0.537 ns) = 3.104 ns; Loc. = LCFF_X64_Y11_N15; Fanout = 2; REG Node = 'compteur:counter|count[7]'
+                Info: Total cell delay = 1.369 ns ( 44.10 % )
+                Info: Total interconnect delay = 1.735 ns ( 55.90 % )
+            Info: - Longest clock path from clock "f_anemo" to source register is 3.104 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.832 ns) = 0.832 ns; Loc. = PIN_J22; Fanout = 8; CLK Node = 'f_anemo'
+                Info: 2: + IC(1.735 ns) + CELL(0.537 ns) = 3.104 ns; Loc. = LCFF_X64_Y11_N1; Fanout = 3; REG Node = 'compteur:counter|count[0]'
+                Info: Total cell delay = 1.369 ns ( 44.10 % )
+                Info: Total interconnect delay = 1.735 ns ( 55.90 % )
+        Info: + Micro clock to output delay of source is 0.250 ns
+        Info: + Micro setup delay of destination is -0.036 ns
+Info: Clock "clk_50M" has Internal fmax of 287.11 MHz between source register "gene_1hz:diviseur|div[0]" and destination register "gene_1hz:diviseur|div[26]" (period= 3.483 ns)
+    Info: + Longest register to register delay is 3.259 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X2_Y11_N7; Fanout = 2; REG Node = 'gene_1hz:diviseur|div[0]'
+        Info: 2: + IC(0.325 ns) + CELL(0.414 ns) = 0.739 ns; Loc. = LCCOMB_X2_Y11_N6; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[0]~55'
+        Info: 3: + IC(0.000 ns) + CELL(0.071 ns) = 0.810 ns; Loc. = LCCOMB_X2_Y11_N8; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[1]~57'
+        Info: 4: + IC(0.000 ns) + CELL(0.071 ns) = 0.881 ns; Loc. = LCCOMB_X2_Y11_N10; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[2]~59'
+        Info: 5: + IC(0.000 ns) + CELL(0.071 ns) = 0.952 ns; Loc. = LCCOMB_X2_Y11_N12; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[3]~61'
+        Info: 6: + IC(0.000 ns) + CELL(0.159 ns) = 1.111 ns; Loc. = LCCOMB_X2_Y11_N14; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[4]~63'
+        Info: 7: + IC(0.000 ns) + CELL(0.071 ns) = 1.182 ns; Loc. = LCCOMB_X2_Y11_N16; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[5]~65'
+        Info: 8: + IC(0.000 ns) + CELL(0.071 ns) = 1.253 ns; Loc. = LCCOMB_X2_Y11_N18; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[6]~67'
+        Info: 9: + IC(0.000 ns) + CELL(0.071 ns) = 1.324 ns; Loc. = LCCOMB_X2_Y11_N20; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[7]~69'
+        Info: 10: + IC(0.000 ns) + CELL(0.071 ns) = 1.395 ns; Loc. = LCCOMB_X2_Y11_N22; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[8]~71'
+        Info: 11: + IC(0.000 ns) + CELL(0.071 ns) = 1.466 ns; Loc. = LCCOMB_X2_Y11_N24; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[9]~73'
+        Info: 12: + IC(0.000 ns) + CELL(0.071 ns) = 1.537 ns; Loc. = LCCOMB_X2_Y11_N26; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[10]~75'
+        Info: 13: + IC(0.000 ns) + CELL(0.071 ns) = 1.608 ns; Loc. = LCCOMB_X2_Y11_N28; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[11]~77'
+        Info: 14: + IC(0.000 ns) + CELL(0.146 ns) = 1.754 ns; Loc. = LCCOMB_X2_Y11_N30; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[12]~79'
+        Info: 15: + IC(0.000 ns) + CELL(0.071 ns) = 1.825 ns; Loc. = LCCOMB_X2_Y10_N0; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[13]~81'
+        Info: 16: + IC(0.000 ns) + CELL(0.071 ns) = 1.896 ns; Loc. = LCCOMB_X2_Y10_N2; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[14]~83'
+        Info: 17: + IC(0.000 ns) + CELL(0.071 ns) = 1.967 ns; Loc. = LCCOMB_X2_Y10_N4; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[15]~85'
+        Info: 18: + IC(0.000 ns) + CELL(0.071 ns) = 2.038 ns; Loc. = LCCOMB_X2_Y10_N6; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[16]~87'
+        Info: 19: + IC(0.000 ns) + CELL(0.071 ns) = 2.109 ns; Loc. = LCCOMB_X2_Y10_N8; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[17]~89'
+        Info: 20: + IC(0.000 ns) + CELL(0.071 ns) = 2.180 ns; Loc. = LCCOMB_X2_Y10_N10; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[18]~91'
+        Info: 21: + IC(0.000 ns) + CELL(0.071 ns) = 2.251 ns; Loc. = LCCOMB_X2_Y10_N12; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[19]~93'
+        Info: 22: + IC(0.000 ns) + CELL(0.159 ns) = 2.410 ns; Loc. = LCCOMB_X2_Y10_N14; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[20]~95'
+        Info: 23: + IC(0.000 ns) + CELL(0.071 ns) = 2.481 ns; Loc. = LCCOMB_X2_Y10_N16; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[21]~97'
+        Info: 24: + IC(0.000 ns) + CELL(0.071 ns) = 2.552 ns; Loc. = LCCOMB_X2_Y10_N18; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[22]~99'
+        Info: 25: + IC(0.000 ns) + CELL(0.071 ns) = 2.623 ns; Loc. = LCCOMB_X2_Y10_N20; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[23]~101'
+        Info: 26: + IC(0.000 ns) + CELL(0.071 ns) = 2.694 ns; Loc. = LCCOMB_X2_Y10_N22; Fanout = 2; COMB Node = 'gene_1hz:diviseur|div[24]~103'
+        Info: 27: + IC(0.000 ns) + CELL(0.071 ns) = 2.765 ns; Loc. = LCCOMB_X2_Y10_N24; Fanout = 1; COMB Node = 'gene_1hz:diviseur|div[25]~105'
+        Info: 28: + IC(0.000 ns) + CELL(0.410 ns) = 3.175 ns; Loc. = LCCOMB_X2_Y10_N26; Fanout = 1; COMB Node = 'gene_1hz:diviseur|div[26]~106'
+        Info: 29: + IC(0.000 ns) + CELL(0.084 ns) = 3.259 ns; Loc. = LCFF_X2_Y10_N27; Fanout = 2; REG Node = 'gene_1hz:diviseur|div[26]'
+        Info: Total cell delay = 2.934 ns ( 90.03 % )
+        Info: Total interconnect delay = 0.325 ns ( 9.97 % )
+    Info: - Smallest clock skew is -0.010 ns
+        Info: + Shortest clock path from clock "clk_50M" to destination register is 2.641 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N2; Fanout = 2; CLK Node = 'clk_50M'
+            Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G2; Fanout = 28; COMB Node = 'clk_50M~clkctrl'
+            Info: 3: + IC(0.987 ns) + CELL(0.537 ns) = 2.641 ns; Loc. = LCFF_X2_Y10_N27; Fanout = 2; REG Node = 'gene_1hz:diviseur|div[26]'
+            Info: Total cell delay = 1.536 ns ( 58.16 % )
+            Info: Total interconnect delay = 1.105 ns ( 41.84 % )
+        Info: - Longest clock path from clock "clk_50M" to source register is 2.651 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N2; Fanout = 2; CLK Node = 'clk_50M'
+            Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G2; Fanout = 28; COMB Node = 'clk_50M~clkctrl'
+            Info: 3: + IC(0.997 ns) + CELL(0.537 ns) = 2.651 ns; Loc. = LCFF_X2_Y11_N7; Fanout = 2; REG Node = 'gene_1hz:diviseur|div[0]'
+            Info: Total cell delay = 1.536 ns ( 57.94 % )
+            Info: Total interconnect delay = 1.115 ns ( 42.06 % )
+    Info: + Micro clock to output delay of source is 0.250 ns
+    Info: + Micro setup delay of destination is -0.036 ns
+Info: tsu for register "gene_1hz:diviseur|sig_clk_out" (data pin = "RAZ", clock pin = "clk_50M") is 1.683 ns
+    Info: + Longest pin to register delay is 4.356 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N26; Fanout = 11; PIN Node = 'RAZ'
+        Info: 2: + IC(2.854 ns) + CELL(0.419 ns) = 4.272 ns; Loc. = LCCOMB_X1_Y10_N26; Fanout = 1; COMB Node = 'gene_1hz:diviseur|sig_clk_out~1'
+        Info: 3: + IC(0.000 ns) + CELL(0.084 ns) = 4.356 ns; Loc. = LCFF_X1_Y10_N27; Fanout = 2; REG Node = 'gene_1hz:diviseur|sig_clk_out'
+        Info: Total cell delay = 1.502 ns ( 34.48 % )
+        Info: Total interconnect delay = 2.854 ns ( 65.52 % )
+    Info: + Micro setup delay of destination is -0.036 ns
+    Info: - Shortest clock path from clock "clk_50M" to destination register is 2.637 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N2; Fanout = 2; CLK Node = 'clk_50M'
+        Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G2; Fanout = 28; COMB Node = 'clk_50M~clkctrl'
+        Info: 3: + IC(0.983 ns) + CELL(0.537 ns) = 2.637 ns; Loc. = LCFF_X1_Y10_N27; Fanout = 2; REG Node = 'gene_1hz:diviseur|sig_clk_out'
+        Info: Total cell delay = 1.536 ns ( 58.25 % )
+        Info: Total interconnect delay = 1.101 ns ( 41.75 % )
+Info: tco from clock "clk_50M" to destination pin "data_anemometre[7]" through register "compteur:counter|stop[7]" is 10.108 ns
+    Info: + Longest clock path from clock "clk_50M" to source register is 5.543 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N2; Fanout = 2; CLK Node = 'clk_50M'
+        Info: 2: + IC(0.948 ns) + CELL(0.787 ns) = 2.734 ns; Loc. = LCFF_X1_Y10_N13; Fanout = 10; REG Node = 'gene_1hz:diviseur|gnr_1hz'
+        Info: 3: + IC(1.248 ns) + CELL(0.000 ns) = 3.982 ns; Loc. = CLKCTRL_G3; Fanout = 8; COMB Node = 'gene_1hz:diviseur|gnr_1hz~clkctrl'
+        Info: 4: + IC(1.024 ns) + CELL(0.537 ns) = 5.543 ns; Loc. = LCFF_X64_Y7_N17; Fanout = 1; REG Node = 'compteur:counter|stop[7]'
+        Info: Total cell delay = 2.323 ns ( 41.91 % )
+        Info: Total interconnect delay = 3.220 ns ( 58.09 % )
+    Info: + Micro clock to output delay of source is 0.250 ns
+    Info: + Longest register to pin delay is 4.315 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X64_Y7_N17; Fanout = 1; REG Node = 'compteur:counter|stop[7]'
+        Info: 2: + IC(0.000 ns) + CELL(0.323 ns) = 0.323 ns; Loc. = LCCOMB_X64_Y7_N16; Fanout = 1; COMB Node = 'machine_etat:machine_etatt|data_anemometre[7]~7'
+        Info: 3: + IC(1.194 ns) + CELL(2.798 ns) = 4.315 ns; Loc. = PIN_AC21; Fanout = 0; PIN Node = 'data_anemometre[7]'
+        Info: Total cell delay = 3.121 ns ( 72.33 % )
+        Info: Total interconnect delay = 1.194 ns ( 27.67 % )
+Info: Longest tpd from source pin "start_stop" to destination pin "data_valid" is 11.562 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.862 ns) = 0.862 ns; Loc. = PIN_G26; Fanout = 9; PIN Node = 'start_stop'
+    Info: 2: + IC(5.677 ns) + CELL(0.150 ns) = 6.689 ns; Loc. = LCCOMB_X64_Y7_N0; Fanout = 1; COMB Node = 'machine_etat:machine_etatt|data_valid~0'
+    Info: 3: + IC(2.075 ns) + CELL(2.798 ns) = 11.562 ns; Loc. = PIN_AD12; Fanout = 0; PIN Node = 'data_valid'
+    Info: Total cell delay = 3.810 ns ( 32.95 % )
+    Info: Total interconnect delay = 7.752 ns ( 67.05 % )
+Info: th for register "gene_1hz:diviseur|sig_clk_out" (data pin = "RAZ", clock pin = "clk_50M") is -1.453 ns
+    Info: + Longest clock path from clock "clk_50M" to destination register is 2.637 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N2; Fanout = 2; CLK Node = 'clk_50M'
+        Info: 2: + IC(0.118 ns) + CELL(0.000 ns) = 1.117 ns; Loc. = CLKCTRL_G2; Fanout = 28; COMB Node = 'clk_50M~clkctrl'
+        Info: 3: + IC(0.983 ns) + CELL(0.537 ns) = 2.637 ns; Loc. = LCFF_X1_Y10_N27; Fanout = 2; REG Node = 'gene_1hz:diviseur|sig_clk_out'
+        Info: Total cell delay = 1.536 ns ( 58.25 % )
+        Info: Total interconnect delay = 1.101 ns ( 41.75 % )
+    Info: + Micro hold delay of destination is 0.266 ns
+    Info: - Shortest pin to register delay is 4.356 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N26; Fanout = 11; PIN Node = 'RAZ'
+        Info: 2: + IC(2.854 ns) + CELL(0.419 ns) = 4.272 ns; Loc. = LCCOMB_X1_Y10_N26; Fanout = 1; COMB Node = 'gene_1hz:diviseur|sig_clk_out~1'
+        Info: 3: + IC(0.000 ns) + CELL(0.084 ns) = 4.356 ns; Loc. = LCFF_X1_Y10_N27; Fanout = 2; REG Node = 'gene_1hz:diviseur|sig_clk_out'
+        Info: Total cell delay = 1.502 ns ( 34.48 % )
+        Info: Total interconnect delay = 2.854 ns ( 65.52 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 173 megabytes
+    Info: Processing ended: Tue Oct 06 09:57:30 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

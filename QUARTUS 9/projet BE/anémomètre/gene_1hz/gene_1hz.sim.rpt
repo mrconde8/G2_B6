@@ -1,0 +1,456 @@
+Simulator report for gene_1hz
+Fri Oct 02 08:34:19 2020
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 159 nodes    ;
+; Simulation Coverage         ;      15.72 % ;
+; Total Number of Transitions ; 345          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Option                                                                                     ; Setting       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Simulation mode                                                                            ; Functional    ; Timing        ;
+; Start time                                                                                 ; 0 ns          ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF          ;               ;
+; Vector input source                                                                        ; Waveform1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
+; Check outputs                                                                              ; Off           ; Off           ;
+; Report simulation coverage                                                                 ; On            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
+; Display missing 1-value coverage report                                                    ; On            ; On            ;
+; Display missing 0-value coverage report                                                    ; On            ; On            ;
+; Detect setup and hold time violations                                                      ; Off           ; Off           ;
+; Detect glitches                                                                            ; Off           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
+; Generate Signal Activity File                                                              ; Off           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      15.72 % ;
+; Total nodes checked                                 ; 159          ;
+; Total output ports checked                          ; 159          ;
+; Total output ports with complete 1/0-value coverage ; 25           ;
+; Total output ports with no 1/0-value coverage       ; 133          ;
+; Total output ports with no 1-value coverage         ; 133          ;
+; Total output ports with no 0-value coverage         ; 134          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |gene_1hz|div~21      ; |gene_1hz|div~21      ; out              ;
+; |gene_1hz|div~22      ; |gene_1hz|div~22      ; out              ;
+; |gene_1hz|div~23      ; |gene_1hz|div~23      ; out              ;
+; |gene_1hz|div~24      ; |gene_1hz|div~24      ; out              ;
+; |gene_1hz|div~25      ; |gene_1hz|div~25      ; out              ;
+; |gene_1hz|div~26      ; |gene_1hz|div~26      ; out              ;
+; |gene_1hz|div[3]      ; |gene_1hz|div[3]      ; regout           ;
+; |gene_1hz|div[2]      ; |gene_1hz|div[2]      ; regout           ;
+; |gene_1hz|div[1]      ; |gene_1hz|div[1]      ; regout           ;
+; |gene_1hz|div[0]      ; |gene_1hz|div[0]      ; regout           ;
+; |gene_1hz|clk_50M     ; |gene_1hz|clk_50M     ; out              ;
+; |gene_1hz|LessThan0~0 ; |gene_1hz|LessThan0~0 ; out0             ;
+; |gene_1hz|LessThan0~1 ; |gene_1hz|LessThan0~1 ; out0             ;
+; |gene_1hz|LessThan0~2 ; |gene_1hz|LessThan0~2 ; out0             ;
+; |gene_1hz|LessThan0~3 ; |gene_1hz|LessThan0~3 ; out0             ;
+; |gene_1hz|LessThan0~4 ; |gene_1hz|LessThan0~4 ; out0             ;
+; |gene_1hz|Add0~0      ; |gene_1hz|Add0~0      ; out0             ;
+; |gene_1hz|Add0~1      ; |gene_1hz|Add0~1      ; out0             ;
+; |gene_1hz|Add0~2      ; |gene_1hz|Add0~2      ; out0             ;
+; |gene_1hz|Add0~3      ; |gene_1hz|Add0~3      ; out0             ;
+; |gene_1hz|Add0~4      ; |gene_1hz|Add0~4      ; out0             ;
+; |gene_1hz|Add0~5      ; |gene_1hz|Add0~5      ; out0             ;
+; |gene_1hz|Add0~6      ; |gene_1hz|Add0~6      ; out0             ;
+; |gene_1hz|Add0~7      ; |gene_1hz|Add0~7      ; out0             ;
+; |gene_1hz|Add0~8      ; |gene_1hz|Add0~8      ; out0             ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------+
+; Missing 1-Value Coverage                                             ;
++-------------------------+-------------------------+------------------+
+; Node Name               ; Output Port Name        ; Output Port Type ;
++-------------------------+-------------------------+------------------+
+; |gene_1hz|sig_clk_out~0 ; |gene_1hz|sig_clk_out~0 ; out              ;
+; |gene_1hz|div~0         ; |gene_1hz|div~0         ; out              ;
+; |gene_1hz|div~1         ; |gene_1hz|div~1         ; out              ;
+; |gene_1hz|div~2         ; |gene_1hz|div~2         ; out              ;
+; |gene_1hz|div~3         ; |gene_1hz|div~3         ; out              ;
+; |gene_1hz|div~4         ; |gene_1hz|div~4         ; out              ;
+; |gene_1hz|div~5         ; |gene_1hz|div~5         ; out              ;
+; |gene_1hz|div~6         ; |gene_1hz|div~6         ; out              ;
+; |gene_1hz|div~7         ; |gene_1hz|div~7         ; out              ;
+; |gene_1hz|div~8         ; |gene_1hz|div~8         ; out              ;
+; |gene_1hz|div~9         ; |gene_1hz|div~9         ; out              ;
+; |gene_1hz|div~10        ; |gene_1hz|div~10        ; out              ;
+; |gene_1hz|div~11        ; |gene_1hz|div~11        ; out              ;
+; |gene_1hz|div~12        ; |gene_1hz|div~12        ; out              ;
+; |gene_1hz|div~13        ; |gene_1hz|div~13        ; out              ;
+; |gene_1hz|div~14        ; |gene_1hz|div~14        ; out              ;
+; |gene_1hz|div~15        ; |gene_1hz|div~15        ; out              ;
+; |gene_1hz|div~16        ; |gene_1hz|div~16        ; out              ;
+; |gene_1hz|div~17        ; |gene_1hz|div~17        ; out              ;
+; |gene_1hz|div~18        ; |gene_1hz|div~18        ; out              ;
+; |gene_1hz|div~19        ; |gene_1hz|div~19        ; out              ;
+; |gene_1hz|div~20        ; |gene_1hz|div~20        ; out              ;
+; |gene_1hz|gnr_1hz~reg0  ; |gene_1hz|gnr_1hz~reg0  ; regout           ;
+; |gene_1hz|div[26]       ; |gene_1hz|div[26]       ; regout           ;
+; |gene_1hz|div[25]       ; |gene_1hz|div[25]       ; regout           ;
+; |gene_1hz|div[24]       ; |gene_1hz|div[24]       ; regout           ;
+; |gene_1hz|div[23]       ; |gene_1hz|div[23]       ; regout           ;
+; |gene_1hz|div[22]       ; |gene_1hz|div[22]       ; regout           ;
+; |gene_1hz|div[21]       ; |gene_1hz|div[21]       ; regout           ;
+; |gene_1hz|div[20]       ; |gene_1hz|div[20]       ; regout           ;
+; |gene_1hz|div[19]       ; |gene_1hz|div[19]       ; regout           ;
+; |gene_1hz|div[18]       ; |gene_1hz|div[18]       ; regout           ;
+; |gene_1hz|div[17]       ; |gene_1hz|div[17]       ; regout           ;
+; |gene_1hz|div[16]       ; |gene_1hz|div[16]       ; regout           ;
+; |gene_1hz|div[15]       ; |gene_1hz|div[15]       ; regout           ;
+; |gene_1hz|div[14]       ; |gene_1hz|div[14]       ; regout           ;
+; |gene_1hz|div[13]       ; |gene_1hz|div[13]       ; regout           ;
+; |gene_1hz|div[12]       ; |gene_1hz|div[12]       ; regout           ;
+; |gene_1hz|div[11]       ; |gene_1hz|div[11]       ; regout           ;
+; |gene_1hz|div[10]       ; |gene_1hz|div[10]       ; regout           ;
+; |gene_1hz|div[9]        ; |gene_1hz|div[9]        ; regout           ;
+; |gene_1hz|div[8]        ; |gene_1hz|div[8]        ; regout           ;
+; |gene_1hz|div[7]        ; |gene_1hz|div[7]        ; regout           ;
+; |gene_1hz|div[6]        ; |gene_1hz|div[6]        ; regout           ;
+; |gene_1hz|div[5]        ; |gene_1hz|div[5]        ; regout           ;
+; |gene_1hz|sig_clk_out   ; |gene_1hz|sig_clk_out   ; regout           ;
+; |gene_1hz|RAZ           ; |gene_1hz|RAZ           ; out              ;
+; |gene_1hz|gnr_1hz       ; |gene_1hz|gnr_1hz       ; pin_out          ;
+; |gene_1hz|LessThan0~5   ; |gene_1hz|LessThan0~5   ; out0             ;
+; |gene_1hz|LessThan0~6   ; |gene_1hz|LessThan0~6   ; out0             ;
+; |gene_1hz|LessThan0~7   ; |gene_1hz|LessThan0~7   ; out0             ;
+; |gene_1hz|LessThan0~8   ; |gene_1hz|LessThan0~8   ; out0             ;
+; |gene_1hz|LessThan0~9   ; |gene_1hz|LessThan0~9   ; out0             ;
+; |gene_1hz|LessThan0~10  ; |gene_1hz|LessThan0~10  ; out0             ;
+; |gene_1hz|LessThan0~11  ; |gene_1hz|LessThan0~11  ; out0             ;
+; |gene_1hz|LessThan0~12  ; |gene_1hz|LessThan0~12  ; out0             ;
+; |gene_1hz|LessThan0~13  ; |gene_1hz|LessThan0~13  ; out0             ;
+; |gene_1hz|LessThan0~14  ; |gene_1hz|LessThan0~14  ; out0             ;
+; |gene_1hz|LessThan0~15  ; |gene_1hz|LessThan0~15  ; out0             ;
+; |gene_1hz|LessThan0~16  ; |gene_1hz|LessThan0~16  ; out0             ;
+; |gene_1hz|LessThan0~17  ; |gene_1hz|LessThan0~17  ; out0             ;
+; |gene_1hz|LessThan0~18  ; |gene_1hz|LessThan0~18  ; out0             ;
+; |gene_1hz|LessThan0~19  ; |gene_1hz|LessThan0~19  ; out0             ;
+; |gene_1hz|LessThan0~20  ; |gene_1hz|LessThan0~20  ; out0             ;
+; |gene_1hz|LessThan0~21  ; |gene_1hz|LessThan0~21  ; out0             ;
+; |gene_1hz|LessThan0~22  ; |gene_1hz|LessThan0~22  ; out0             ;
+; |gene_1hz|LessThan0~23  ; |gene_1hz|LessThan0~23  ; out0             ;
+; |gene_1hz|LessThan0~24  ; |gene_1hz|LessThan0~24  ; out0             ;
+; |gene_1hz|LessThan0~25  ; |gene_1hz|LessThan0~25  ; out0             ;
+; |gene_1hz|LessThan0~26  ; |gene_1hz|LessThan0~26  ; out0             ;
+; |gene_1hz|LessThan0~27  ; |gene_1hz|LessThan0~27  ; out0             ;
+; |gene_1hz|LessThan0~28  ; |gene_1hz|LessThan0~28  ; out0             ;
+; |gene_1hz|LessThan0~29  ; |gene_1hz|LessThan0~29  ; out0             ;
+; |gene_1hz|LessThan0~30  ; |gene_1hz|LessThan0~30  ; out0             ;
+; |gene_1hz|LessThan0~31  ; |gene_1hz|LessThan0~31  ; out0             ;
+; |gene_1hz|LessThan0~32  ; |gene_1hz|LessThan0~32  ; out0             ;
+; |gene_1hz|LessThan0~33  ; |gene_1hz|LessThan0~33  ; out0             ;
+; |gene_1hz|LessThan0~34  ; |gene_1hz|LessThan0~34  ; out0             ;
+; |gene_1hz|LessThan0~35  ; |gene_1hz|LessThan0~35  ; out0             ;
+; |gene_1hz|LessThan0~36  ; |gene_1hz|LessThan0~36  ; out0             ;
+; |gene_1hz|LessThan0~37  ; |gene_1hz|LessThan0~37  ; out0             ;
+; |gene_1hz|LessThan0~38  ; |gene_1hz|LessThan0~38  ; out0             ;
+; |gene_1hz|LessThan0~39  ; |gene_1hz|LessThan0~39  ; out0             ;
+; |gene_1hz|LessThan0~40  ; |gene_1hz|LessThan0~40  ; out0             ;
+; |gene_1hz|LessThan0~41  ; |gene_1hz|LessThan0~41  ; out0             ;
+; |gene_1hz|LessThan0~42  ; |gene_1hz|LessThan0~42  ; out0             ;
+; |gene_1hz|LessThan0~43  ; |gene_1hz|LessThan0~43  ; out0             ;
+; |gene_1hz|LessThan0~44  ; |gene_1hz|LessThan0~44  ; out0             ;
+; |gene_1hz|LessThan0~45  ; |gene_1hz|LessThan0~45  ; out0             ;
+; |gene_1hz|LessThan0~46  ; |gene_1hz|LessThan0~46  ; out0             ;
+; |gene_1hz|LessThan0~47  ; |gene_1hz|LessThan0~47  ; out0             ;
+; |gene_1hz|Add0~9        ; |gene_1hz|Add0~9        ; out0             ;
+; |gene_1hz|Add0~10       ; |gene_1hz|Add0~10       ; out0             ;
+; |gene_1hz|Add0~11       ; |gene_1hz|Add0~11       ; out0             ;
+; |gene_1hz|Add0~12       ; |gene_1hz|Add0~12       ; out0             ;
+; |gene_1hz|Add0~13       ; |gene_1hz|Add0~13       ; out0             ;
+; |gene_1hz|Add0~14       ; |gene_1hz|Add0~14       ; out0             ;
+; |gene_1hz|Add0~15       ; |gene_1hz|Add0~15       ; out0             ;
+; |gene_1hz|Add0~16       ; |gene_1hz|Add0~16       ; out0             ;
+; |gene_1hz|Add0~17       ; |gene_1hz|Add0~17       ; out0             ;
+; |gene_1hz|Add0~18       ; |gene_1hz|Add0~18       ; out0             ;
+; |gene_1hz|Add0~19       ; |gene_1hz|Add0~19       ; out0             ;
+; |gene_1hz|Add0~20       ; |gene_1hz|Add0~20       ; out0             ;
+; |gene_1hz|Add0~21       ; |gene_1hz|Add0~21       ; out0             ;
+; |gene_1hz|Add0~22       ; |gene_1hz|Add0~22       ; out0             ;
+; |gene_1hz|Add0~23       ; |gene_1hz|Add0~23       ; out0             ;
+; |gene_1hz|Add0~24       ; |gene_1hz|Add0~24       ; out0             ;
+; |gene_1hz|Add0~25       ; |gene_1hz|Add0~25       ; out0             ;
+; |gene_1hz|Add0~26       ; |gene_1hz|Add0~26       ; out0             ;
+; |gene_1hz|Add0~27       ; |gene_1hz|Add0~27       ; out0             ;
+; |gene_1hz|Add0~28       ; |gene_1hz|Add0~28       ; out0             ;
+; |gene_1hz|Add0~29       ; |gene_1hz|Add0~29       ; out0             ;
+; |gene_1hz|Add0~30       ; |gene_1hz|Add0~30       ; out0             ;
+; |gene_1hz|Add0~31       ; |gene_1hz|Add0~31       ; out0             ;
+; |gene_1hz|Add0~32       ; |gene_1hz|Add0~32       ; out0             ;
+; |gene_1hz|Add0~33       ; |gene_1hz|Add0~33       ; out0             ;
+; |gene_1hz|Add0~34       ; |gene_1hz|Add0~34       ; out0             ;
+; |gene_1hz|Add0~35       ; |gene_1hz|Add0~35       ; out0             ;
+; |gene_1hz|Add0~36       ; |gene_1hz|Add0~36       ; out0             ;
+; |gene_1hz|Add0~37       ; |gene_1hz|Add0~37       ; out0             ;
+; |gene_1hz|Add0~38       ; |gene_1hz|Add0~38       ; out0             ;
+; |gene_1hz|Add0~39       ; |gene_1hz|Add0~39       ; out0             ;
+; |gene_1hz|Add0~40       ; |gene_1hz|Add0~40       ; out0             ;
+; |gene_1hz|Add0~41       ; |gene_1hz|Add0~41       ; out0             ;
+; |gene_1hz|Add0~42       ; |gene_1hz|Add0~42       ; out0             ;
+; |gene_1hz|Add0~43       ; |gene_1hz|Add0~43       ; out0             ;
+; |gene_1hz|Add0~44       ; |gene_1hz|Add0~44       ; out0             ;
+; |gene_1hz|Add0~45       ; |gene_1hz|Add0~45       ; out0             ;
+; |gene_1hz|Add0~46       ; |gene_1hz|Add0~46       ; out0             ;
+; |gene_1hz|Add0~47       ; |gene_1hz|Add0~47       ; out0             ;
+; |gene_1hz|Add0~48       ; |gene_1hz|Add0~48       ; out0             ;
+; |gene_1hz|Add0~49       ; |gene_1hz|Add0~49       ; out0             ;
+; |gene_1hz|Add0~50       ; |gene_1hz|Add0~50       ; out0             ;
++-------------------------+-------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------+
+; Missing 0-Value Coverage                                             ;
++-------------------------+-------------------------+------------------+
+; Node Name               ; Output Port Name        ; Output Port Type ;
++-------------------------+-------------------------+------------------+
+; |gene_1hz|sig_clk_out~0 ; |gene_1hz|sig_clk_out~0 ; out              ;
+; |gene_1hz|div~0         ; |gene_1hz|div~0         ; out              ;
+; |gene_1hz|div~1         ; |gene_1hz|div~1         ; out              ;
+; |gene_1hz|div~2         ; |gene_1hz|div~2         ; out              ;
+; |gene_1hz|div~3         ; |gene_1hz|div~3         ; out              ;
+; |gene_1hz|div~4         ; |gene_1hz|div~4         ; out              ;
+; |gene_1hz|div~5         ; |gene_1hz|div~5         ; out              ;
+; |gene_1hz|div~6         ; |gene_1hz|div~6         ; out              ;
+; |gene_1hz|div~7         ; |gene_1hz|div~7         ; out              ;
+; |gene_1hz|div~8         ; |gene_1hz|div~8         ; out              ;
+; |gene_1hz|div~9         ; |gene_1hz|div~9         ; out              ;
+; |gene_1hz|div~10        ; |gene_1hz|div~10        ; out              ;
+; |gene_1hz|div~11        ; |gene_1hz|div~11        ; out              ;
+; |gene_1hz|div~12        ; |gene_1hz|div~12        ; out              ;
+; |gene_1hz|div~13        ; |gene_1hz|div~13        ; out              ;
+; |gene_1hz|div~14        ; |gene_1hz|div~14        ; out              ;
+; |gene_1hz|div~15        ; |gene_1hz|div~15        ; out              ;
+; |gene_1hz|div~16        ; |gene_1hz|div~16        ; out              ;
+; |gene_1hz|div~17        ; |gene_1hz|div~17        ; out              ;
+; |gene_1hz|div~18        ; |gene_1hz|div~18        ; out              ;
+; |gene_1hz|div~19        ; |gene_1hz|div~19        ; out              ;
+; |gene_1hz|div~20        ; |gene_1hz|div~20        ; out              ;
+; |gene_1hz|gnr_1hz~reg0  ; |gene_1hz|gnr_1hz~reg0  ; regout           ;
+; |gene_1hz|div[26]       ; |gene_1hz|div[26]       ; regout           ;
+; |gene_1hz|div[25]       ; |gene_1hz|div[25]       ; regout           ;
+; |gene_1hz|div[24]       ; |gene_1hz|div[24]       ; regout           ;
+; |gene_1hz|div[23]       ; |gene_1hz|div[23]       ; regout           ;
+; |gene_1hz|div[22]       ; |gene_1hz|div[22]       ; regout           ;
+; |gene_1hz|div[21]       ; |gene_1hz|div[21]       ; regout           ;
+; |gene_1hz|div[20]       ; |gene_1hz|div[20]       ; regout           ;
+; |gene_1hz|div[19]       ; |gene_1hz|div[19]       ; regout           ;
+; |gene_1hz|div[18]       ; |gene_1hz|div[18]       ; regout           ;
+; |gene_1hz|div[17]       ; |gene_1hz|div[17]       ; regout           ;
+; |gene_1hz|div[16]       ; |gene_1hz|div[16]       ; regout           ;
+; |gene_1hz|div[15]       ; |gene_1hz|div[15]       ; regout           ;
+; |gene_1hz|div[14]       ; |gene_1hz|div[14]       ; regout           ;
+; |gene_1hz|div[13]       ; |gene_1hz|div[13]       ; regout           ;
+; |gene_1hz|div[12]       ; |gene_1hz|div[12]       ; regout           ;
+; |gene_1hz|div[11]       ; |gene_1hz|div[11]       ; regout           ;
+; |gene_1hz|div[10]       ; |gene_1hz|div[10]       ; regout           ;
+; |gene_1hz|div[9]        ; |gene_1hz|div[9]        ; regout           ;
+; |gene_1hz|div[8]        ; |gene_1hz|div[8]        ; regout           ;
+; |gene_1hz|div[7]        ; |gene_1hz|div[7]        ; regout           ;
+; |gene_1hz|div[6]        ; |gene_1hz|div[6]        ; regout           ;
+; |gene_1hz|div[5]        ; |gene_1hz|div[5]        ; regout           ;
+; |gene_1hz|div[4]        ; |gene_1hz|div[4]        ; regout           ;
+; |gene_1hz|sig_clk_out   ; |gene_1hz|sig_clk_out   ; regout           ;
+; |gene_1hz|RAZ           ; |gene_1hz|RAZ           ; out              ;
+; |gene_1hz|gnr_1hz       ; |gene_1hz|gnr_1hz       ; pin_out          ;
+; |gene_1hz|LessThan0~5   ; |gene_1hz|LessThan0~5   ; out0             ;
+; |gene_1hz|LessThan0~6   ; |gene_1hz|LessThan0~6   ; out0             ;
+; |gene_1hz|LessThan0~7   ; |gene_1hz|LessThan0~7   ; out0             ;
+; |gene_1hz|LessThan0~8   ; |gene_1hz|LessThan0~8   ; out0             ;
+; |gene_1hz|LessThan0~9   ; |gene_1hz|LessThan0~9   ; out0             ;
+; |gene_1hz|LessThan0~10  ; |gene_1hz|LessThan0~10  ; out0             ;
+; |gene_1hz|LessThan0~11  ; |gene_1hz|LessThan0~11  ; out0             ;
+; |gene_1hz|LessThan0~12  ; |gene_1hz|LessThan0~12  ; out0             ;
+; |gene_1hz|LessThan0~13  ; |gene_1hz|LessThan0~13  ; out0             ;
+; |gene_1hz|LessThan0~14  ; |gene_1hz|LessThan0~14  ; out0             ;
+; |gene_1hz|LessThan0~15  ; |gene_1hz|LessThan0~15  ; out0             ;
+; |gene_1hz|LessThan0~16  ; |gene_1hz|LessThan0~16  ; out0             ;
+; |gene_1hz|LessThan0~17  ; |gene_1hz|LessThan0~17  ; out0             ;
+; |gene_1hz|LessThan0~18  ; |gene_1hz|LessThan0~18  ; out0             ;
+; |gene_1hz|LessThan0~19  ; |gene_1hz|LessThan0~19  ; out0             ;
+; |gene_1hz|LessThan0~20  ; |gene_1hz|LessThan0~20  ; out0             ;
+; |gene_1hz|LessThan0~21  ; |gene_1hz|LessThan0~21  ; out0             ;
+; |gene_1hz|LessThan0~22  ; |gene_1hz|LessThan0~22  ; out0             ;
+; |gene_1hz|LessThan0~23  ; |gene_1hz|LessThan0~23  ; out0             ;
+; |gene_1hz|LessThan0~24  ; |gene_1hz|LessThan0~24  ; out0             ;
+; |gene_1hz|LessThan0~25  ; |gene_1hz|LessThan0~25  ; out0             ;
+; |gene_1hz|LessThan0~26  ; |gene_1hz|LessThan0~26  ; out0             ;
+; |gene_1hz|LessThan0~27  ; |gene_1hz|LessThan0~27  ; out0             ;
+; |gene_1hz|LessThan0~28  ; |gene_1hz|LessThan0~28  ; out0             ;
+; |gene_1hz|LessThan0~29  ; |gene_1hz|LessThan0~29  ; out0             ;
+; |gene_1hz|LessThan0~30  ; |gene_1hz|LessThan0~30  ; out0             ;
+; |gene_1hz|LessThan0~31  ; |gene_1hz|LessThan0~31  ; out0             ;
+; |gene_1hz|LessThan0~32  ; |gene_1hz|LessThan0~32  ; out0             ;
+; |gene_1hz|LessThan0~33  ; |gene_1hz|LessThan0~33  ; out0             ;
+; |gene_1hz|LessThan0~34  ; |gene_1hz|LessThan0~34  ; out0             ;
+; |gene_1hz|LessThan0~35  ; |gene_1hz|LessThan0~35  ; out0             ;
+; |gene_1hz|LessThan0~36  ; |gene_1hz|LessThan0~36  ; out0             ;
+; |gene_1hz|LessThan0~37  ; |gene_1hz|LessThan0~37  ; out0             ;
+; |gene_1hz|LessThan0~38  ; |gene_1hz|LessThan0~38  ; out0             ;
+; |gene_1hz|LessThan0~39  ; |gene_1hz|LessThan0~39  ; out0             ;
+; |gene_1hz|LessThan0~40  ; |gene_1hz|LessThan0~40  ; out0             ;
+; |gene_1hz|LessThan0~41  ; |gene_1hz|LessThan0~41  ; out0             ;
+; |gene_1hz|LessThan0~42  ; |gene_1hz|LessThan0~42  ; out0             ;
+; |gene_1hz|LessThan0~43  ; |gene_1hz|LessThan0~43  ; out0             ;
+; |gene_1hz|LessThan0~44  ; |gene_1hz|LessThan0~44  ; out0             ;
+; |gene_1hz|LessThan0~45  ; |gene_1hz|LessThan0~45  ; out0             ;
+; |gene_1hz|LessThan0~46  ; |gene_1hz|LessThan0~46  ; out0             ;
+; |gene_1hz|LessThan0~47  ; |gene_1hz|LessThan0~47  ; out0             ;
+; |gene_1hz|Add0~9        ; |gene_1hz|Add0~9        ; out0             ;
+; |gene_1hz|Add0~10       ; |gene_1hz|Add0~10       ; out0             ;
+; |gene_1hz|Add0~11       ; |gene_1hz|Add0~11       ; out0             ;
+; |gene_1hz|Add0~12       ; |gene_1hz|Add0~12       ; out0             ;
+; |gene_1hz|Add0~13       ; |gene_1hz|Add0~13       ; out0             ;
+; |gene_1hz|Add0~14       ; |gene_1hz|Add0~14       ; out0             ;
+; |gene_1hz|Add0~15       ; |gene_1hz|Add0~15       ; out0             ;
+; |gene_1hz|Add0~16       ; |gene_1hz|Add0~16       ; out0             ;
+; |gene_1hz|Add0~17       ; |gene_1hz|Add0~17       ; out0             ;
+; |gene_1hz|Add0~18       ; |gene_1hz|Add0~18       ; out0             ;
+; |gene_1hz|Add0~19       ; |gene_1hz|Add0~19       ; out0             ;
+; |gene_1hz|Add0~20       ; |gene_1hz|Add0~20       ; out0             ;
+; |gene_1hz|Add0~21       ; |gene_1hz|Add0~21       ; out0             ;
+; |gene_1hz|Add0~22       ; |gene_1hz|Add0~22       ; out0             ;
+; |gene_1hz|Add0~23       ; |gene_1hz|Add0~23       ; out0             ;
+; |gene_1hz|Add0~24       ; |gene_1hz|Add0~24       ; out0             ;
+; |gene_1hz|Add0~25       ; |gene_1hz|Add0~25       ; out0             ;
+; |gene_1hz|Add0~26       ; |gene_1hz|Add0~26       ; out0             ;
+; |gene_1hz|Add0~27       ; |gene_1hz|Add0~27       ; out0             ;
+; |gene_1hz|Add0~28       ; |gene_1hz|Add0~28       ; out0             ;
+; |gene_1hz|Add0~29       ; |gene_1hz|Add0~29       ; out0             ;
+; |gene_1hz|Add0~30       ; |gene_1hz|Add0~30       ; out0             ;
+; |gene_1hz|Add0~31       ; |gene_1hz|Add0~31       ; out0             ;
+; |gene_1hz|Add0~32       ; |gene_1hz|Add0~32       ; out0             ;
+; |gene_1hz|Add0~33       ; |gene_1hz|Add0~33       ; out0             ;
+; |gene_1hz|Add0~34       ; |gene_1hz|Add0~34       ; out0             ;
+; |gene_1hz|Add0~35       ; |gene_1hz|Add0~35       ; out0             ;
+; |gene_1hz|Add0~36       ; |gene_1hz|Add0~36       ; out0             ;
+; |gene_1hz|Add0~37       ; |gene_1hz|Add0~37       ; out0             ;
+; |gene_1hz|Add0~38       ; |gene_1hz|Add0~38       ; out0             ;
+; |gene_1hz|Add0~39       ; |gene_1hz|Add0~39       ; out0             ;
+; |gene_1hz|Add0~40       ; |gene_1hz|Add0~40       ; out0             ;
+; |gene_1hz|Add0~41       ; |gene_1hz|Add0~41       ; out0             ;
+; |gene_1hz|Add0~42       ; |gene_1hz|Add0~42       ; out0             ;
+; |gene_1hz|Add0~43       ; |gene_1hz|Add0~43       ; out0             ;
+; |gene_1hz|Add0~44       ; |gene_1hz|Add0~44       ; out0             ;
+; |gene_1hz|Add0~45       ; |gene_1hz|Add0~45       ; out0             ;
+; |gene_1hz|Add0~46       ; |gene_1hz|Add0~46       ; out0             ;
+; |gene_1hz|Add0~47       ; |gene_1hz|Add0~47       ; out0             ;
+; |gene_1hz|Add0~48       ; |gene_1hz|Add0~48       ; out0             ;
+; |gene_1hz|Add0~49       ; |gene_1hz|Add0~49       ; out0             ;
+; |gene_1hz|Add0~50       ; |gene_1hz|Add0~50       ; out0             ;
++-------------------------+-------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Oct 02 08:34:19 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off gene_1hz -c gene_1hz
+Info: Using vector source file "C:/Users/Etudiant/Desktop/G2_B6/projet BE/anémomètre/gene_1hz/Waveform1.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Waveform1.vwf called gene_1hz.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      15.72 %
+Info: Number of transitions in simulation is 345
+Info: Vector file Waveform1.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 150 megabytes
+    Info: Processing ended: Fri Oct 02 08:34:19 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

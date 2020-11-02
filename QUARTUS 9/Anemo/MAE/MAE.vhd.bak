@@ -1,0 +1,48 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+
+entity MAE is
+	port (
+		data_in : in std_logic_vector(7 downto 0);
+		clk : in std_logic;
+		start_stop : in std_logic;
+		acq : in std_logic ;
+		
+		data_valid : out std_logic ;
+		data_value : out std_logic_vector(7 downto 0)
+	);
+end entity;
+
+architecture arch_MAE of MAE IS
+
+	signal etat : std_logic_vector(2 downto 0);
+	signal va : std_logic_vector(7 downto 0);
+
+	begin
+
+	switch : process (clk, start_stop, acq)
+	begin
+
+	if rising_edge(clk) then
+		if etat = 0 then
+			va <= data_in ;
+		elsif etat = 1 then
+			if acq = '1' then
+				va <= data_in ;
+			end if;
+		end if;
+		
+		if start_stop = 1 then
+			etat <= "000";
+		else
+			etat <= "001";
+		end if;
+		
+	end if;
+
+	end process;  
+
+	data_value <= va;
+
+end arch_MAE ;

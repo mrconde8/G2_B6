@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.112 ns
+From           : gene_1hz
+To             : count[7]
+From Clock     : --
+To Clock       : f_anemo
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.384 ns
+From           : count[7]
+To             : Data_in[7]
+From Clock     : f_anemo
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.882 ns
+From           : gene_1hz
+To             : count[7]
+From Clock     : --
+To Clock       : f_anemo
+Failed Paths   : 0
+
+Type           : Clock Setup: 'f_anemo'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 420.17 MHz ( period = 2.380 ns )
+From           : count[0]
+To             : count[7]
+From Clock     : f_anemo
+To Clock       : f_anemo
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

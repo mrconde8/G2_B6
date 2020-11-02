@@ -1,0 +1,35 @@
+|compteur
+RAZ => count[7].ACLR
+RAZ => count[6].ACLR
+RAZ => count[5].ACLR
+RAZ => count[4].ACLR
+RAZ => count[3].ACLR
+RAZ => count[2].ACLR
+RAZ => count[1].ACLR
+RAZ => count[0].ACLR
+gene_1hz => count~7.OUTPUTSELECT
+gene_1hz => count~6.OUTPUTSELECT
+gene_1hz => count~5.OUTPUTSELECT
+gene_1hz => count~4.OUTPUTSELECT
+gene_1hz => count~3.OUTPUTSELECT
+gene_1hz => count~2.OUTPUTSELECT
+gene_1hz => count~1.OUTPUTSELECT
+gene_1hz => count~0.OUTPUTSELECT
+f_anemo => count[7].CLK
+f_anemo => count[6].CLK
+f_anemo => count[5].CLK
+f_anemo => count[4].CLK
+f_anemo => count[3].CLK
+f_anemo => count[2].CLK
+f_anemo => count[1].CLK
+f_anemo => count[0].CLK
+Data_in[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+Data_in[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+Data_in[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+Data_in[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+Data_in[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+Data_in[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
+Data_in[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
+Data_in[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

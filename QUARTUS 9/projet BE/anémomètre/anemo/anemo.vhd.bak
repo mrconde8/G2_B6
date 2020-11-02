@@ -1,0 +1,53 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+
+entity anemo is
+port(
+	clk_50M,f_anemo,continu,start_stop	:	in std_logic;
+	RAZ	:	in std_logic;
+	data_valid : out std_logic;
+	data_anemometre	:	out std_logic_vector( 7 downto 0));
+end anemo;
+
+architecture description of anemo is
+
+signal tmp: std_logic;
+
+signal stop: std_logic_vector(7 downto 0);
+component gene_1hz
+
+port(clk_50M,RAZ:in std_logic;
+     gnr_1hz:out std_logic);
+end component;
+
+component compteur
+port(
+	f_anemo,gnr_1hz	:	in std_logic;
+	RAZ	:	in std_logic;
+	data_in	:	out std_logic_vector( 7 downto 0)
+);
+end  component;
+
+component machine_etat
+
+	port(data_in: in std_logic_vector(7 downto 0);
+	start_stop,continu	:	in std_logic;
+	RAZ	:	in std_logic;
+	data_valid : out std_logic;
+	data_anemometre	:	out std_logic_vector( 7 downto 0));
+end component;
+
+begin
+	masse<='0';
+	diviseur : gene_1hz
+	port map(Clk_50M=>Clk_50M, RAZ=>RAZ, gnr_1hz => tmp);
+	
+	counter : compteur
+	port map( gnr_1hz=>tmp,RAZ=>RAZ,f_anemo=>f_anemo,data_in=> stop); 
+	
+	machine_etatt: machine_etat
+	port map( data_valid=>data_valid,RAZ=>RAZ,data_anemometre=>data_anemometre,continu=>continu,start_stop=>start_stop,data_in=>stop);
+	end architecture;

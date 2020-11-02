@@ -1,0 +1,11 @@
+|Compteur
+CLOCK => Q[3]~reg0.CLK
+CLOCK => Q[2]~reg0.CLK
+CLOCK => Q[1]~reg0.CLK
+CLOCK => Q[0]~reg0.CLK
+Q[0] <= comb~6
+Q[1] <= comb~4
+Q[2] <= comb~2
+Q[3] <= comb~0
+
+
