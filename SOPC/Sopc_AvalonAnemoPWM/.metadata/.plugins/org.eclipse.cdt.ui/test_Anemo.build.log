@@ -1,0 +1,17 @@
+
+**** Build of configuration Nios II for project test_Anemo ****
+
+make all 
+Info: Building ../test_Anemo_bsp/
+make --no-print-directory -C ../test_Anemo_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../test_Anemo_bsp//HAL/inc -I../test_Anemo_bsp/ -I../test_Anemo_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking test_Anemo.elf
+nios2-elf-g++  -T'../test_Anemo_bsp//linker.x' -msys-crt0='../test_Anemo_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../test_Anemo_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=test_Anemo.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o test_Anemo.elf obj/default/hello_world_small.o -lm 
+nios2-elf-insert test_Anemo.elf --thread_model hal --cpu_name cpu_0 --simulation_enabled false --id 0 --sidp 0x11038 --timestamp 1606173968 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name AnemoAvalon --quartus_project_dir "D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonAnemoPWM" --jdi D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonAnemoPWM/avalonPWM.jdi
+Info: (test_Anemo.elf) 588 Bytes program size (code + initialized data).
+Info:                  19 KBytes free for stack + heap.
+Info: Creating test_Anemo.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source test_Anemo.elf >test_Anemo.objdump
+[test_Anemo build complete]

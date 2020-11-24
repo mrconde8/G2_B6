@@ -1,0 +1,81 @@
+Altera SOPC Builder Version 11.12 Build 259
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2020.11.09 21:10:30 (*) mk_custom_sdk starting
+# 2020.11.09 21:10:30 (*) Reading project D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/sopcPWM.ptf.
+
+# 2020.11.09 21:10:30 (*) Finding all CPUs
+# 2020.11.09 21:10:30 (*) Finding all available components
+# 2020.11.09 21:10:30 (*) Reading D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/.sopc_builder/install.ptf
+
+# 2020.11.09 21:10:30 (*) Found 63 components
+
+# 2020.11.09 21:10:30 (*) Finding all peripherals
+
+# 2020.11.09 21:10:30 (*) Finding software components
+
+# 2020.11.09 21:10:30 (*) (Legacy SDK Generation Skipped)
+# 2020.11.09 21:10:30 (*) (All TCL Script Generation Skipped)
+# 2020.11.09 21:10:30 (*) (No Libraries Built)
+# 2020.11.09 21:10:30 (*) (Contents Generation Skipped)
+# 2020.11.09 21:10:30 (*) mk_custom_sdk finishing
+
+# 2020.11.09 21:10:30 (*) Starting generation for system: sopcPWM.
+
+.
+.
+..
+.
+.
+
+# 2020.11.09 21:10:31 (*) Running Generator Program for cpu_0
+
+# 2020.11.09 21:10:32 (*) Starting Nios II generation
+# 2020.11.09 21:10:32 (*)   Checking for plaintext license.
+# 2020.11.09 21:10:32 (*)   Couldn't query license setup in Quartus directory c:/altera/11.1sp2/quartus
+# 2020.11.09 21:10:32 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2020.11.09 21:10:32 (*)   LM_LICENSE_FILE environment variable is empty
+# 2020.11.09 21:10:32 (*)   Plaintext license not found.
+# 2020.11.09 21:10:32 (*)   No license required to generate encrypted Nios II/e.
+
+# 2020.11.09 21:10:32 (*)   Getting CPU configuration settings
+# 2020.11.09 21:10:32 (*)   Elaborating CPU configuration settings
+# 2020.11.09 21:10:32 (*)   Creating all objects for CPU
+# 2020.11.09 21:10:33 (*)   Generating HDL from CPU objects
+# 2020.11.09 21:10:33 (*)   Creating plain-text HDL
+# 2020.11.09 21:10:35 (*) Done Nios II generation
+
+# 2020.11.09 21:10:35 (*) Running Generator Program for sram
+
+# 2020.11.09 21:10:35 (*) Running Generator Program for buttons
+
+# 2020.11.09 21:10:36 (*) Running Generator Program for leds
+
+# 2020.11.09 21:10:36 (*) Running Generator Program for jtag_uart_0
+
+# 2020.11.09 21:10:37 (*) Running Generator Program for sysid
+
+
+# 2020.11.09 21:10:37 (*) Making arbitration and system (top) modules.
+
+# 2020.11.09 21:10:39 (*) Generating Quartus symbol for top level: sopcPWM
+
+# 2020.11.09 21:10:39 (*) Generating Symbol D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/sopcPWM.bsf
+
+# 2020.11.09 21:10:39 (*) Creating command-line system-generation script: D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/sopcPWM_generation_script
+
+# 2020.11.09 21:10:39 (*) Running setup for HDL simulator: modelsim
+
+
+# 2020.11.09 21:10:39 (*) Completed generation for system: sopcPWM.
+# 2020.11.09 21:10:39 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/sopcPWM.ptf 
+  System HDL Model : D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/sopcPWM.vhd 
+  System Generation Script : D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/sopcPWM_generation_script 
+
+# 2020.11.09 21:10:39 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.
