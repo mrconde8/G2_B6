@@ -1,0 +1,166 @@
+!SESSION 2020-11-09 20:41:57.139 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-11-09 20:46:00.397
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at com.sun.org.apache.xerces.internal.dom.ParentNode.nodeListGetLength(Unknown Source)
+	at com.sun.org.apache.xerces.internal.dom.ParentNode.getLength(Unknown Source)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.createXmlElementCopy(XmlProjectDescriptionStorage.java:821)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.copyElement(XmlProjectDescriptionStorage.java:845)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.createWritableDescription(XmlProjectDescriptionStorage.java:329)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:280)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:416)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:398)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:393)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:386)
+	at org.eclipse.cdt.core.model.CoreModel.getProjectDescription(CoreModel.java:1424)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getLanguage(TranslationUnit.java:713)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getLanguages(ProjectIndexerInputAdapter.java:183)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.extractFiles(AbstractIndexerTask.java:393)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:335)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:127)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMRebuildTask.run(PDOMRebuildTask.java:84)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-11-09 20:46:00.402
+!MESSAGE An internal error occurred during: "C/C++ Indexer".
+!STACK 0
+java.lang.NullPointerException
+	at com.sun.org.apache.xerces.internal.dom.ParentNode.nodeListGetLength(Unknown Source)
+	at com.sun.org.apache.xerces.internal.dom.ParentNode.getLength(Unknown Source)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.createXmlElementCopy(XmlProjectDescriptionStorage.java:821)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.copyElement(XmlProjectDescriptionStorage.java:845)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.createWritableDescription(XmlProjectDescriptionStorage.java:329)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:280)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:416)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:398)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:393)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:386)
+	at org.eclipse.cdt.core.model.CoreModel.getProjectDescription(CoreModel.java:1424)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getLanguage(TranslationUnit.java:713)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getLanguages(ProjectIndexerInputAdapter.java:183)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.extractFiles(AbstractIndexerTask.java:393)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:335)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:127)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMRebuildTask.run(PDOMRebuildTask.java:84)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-11-09 20:46:04.305
+!MESSAGE Indexed 'test_sopc' (1 sources, 13 headers) in 0,16 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00 %)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 20:50:15.616
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11028 --id=0x0 --timestamp=1604950162]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 20:50:18.252
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11028 --id=0x0 --timestamp=1604950162 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/test_sopc.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 21:58:49.661
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 21:58:50.806
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11028 --id=0x0 --timestamp=1604950162]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 21:58:53.260
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11028 --id=0x0 --timestamp=1604950162 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/test_sopc.elf]
+!SESSION 2020-11-09 22:00:31.126 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:01:30.899
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11038 --id=0x0 --timestamp=1604952608]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:01:33.845
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11038 --id=0x0 --timestamp=1604952608 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/test_sopc.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:05:33.525
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:05:34.735
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11038 --id=0x0 --timestamp=1604952608]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:05:37.616
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11038 --id=0x0 --timestamp=1604952608 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/test_sopc.elf]
+!SESSION 2020-11-09 22:11:10.092 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:12:47.408
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11038 --id=0x0 --timestamp=1604952608]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:12:50.392
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11038 --id=0x0 --timestamp=1604952608 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/test_sopc.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:21:11.234
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:21:12.485
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11038 --id=0x0 --timestamp=1604952608]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:21:15.501
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11038 --id=0x0 --timestamp=1604952608 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/test_sopc.elf]
+!SESSION 2020-11-09 22:25:35.909 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:27:25.688
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11038 --id=0x0 --timestamp=1604952608]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:27:28.654
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11038 --id=0x0 --timestamp=1604952608 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/test_sopc.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:33:12.075
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:33:13.283
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11038 --id=0x0 --timestamp=1604952608]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:33:16.197
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11038 --id=0x0 --timestamp=1604952608 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/test_sopc.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:34:35.509
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:34:36.731
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11038 --id=0x0 --timestamp=1604952608]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:34:39.673
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11038 --id=0x0 --timestamp=1604952608 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/test_sopc.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:37:15.050
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:37:16.265
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11038 --id=0x0 --timestamp=1604952608]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:37:19.207
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11038 --id=0x0 --timestamp=1604952608 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/test_sopc.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:43:21.381
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:43:22.608
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11038 --id=0x0 --timestamp=1604952608]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-11-09 22:43:25.522
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11038 --id=0x0 --timestamp=1604952608 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/test_sopc.elf]

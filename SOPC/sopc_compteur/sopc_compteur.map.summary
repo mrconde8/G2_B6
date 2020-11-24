@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue Oct 20 09:41:43 2020
-Quartus II Version : 11.0 Build 208 07/03/2011 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Tue Nov 03 11:32:01 2020
+Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
 Revision Name : sopc_compteur
 Top-level Entity Name : sopc_compteur
 Family : Cyclone IV E
-Total logic elements : 1,434
-    Total combinational functions : 1,314
-    Dedicated logic registers : 715
-Total registers : 715
+Total logic elements : 1,439
+    Total combinational functions : 1,316
+    Dedicated logic registers : 720
+Total registers : 720
 Total pins : 11
 Total virtual pins : 0
 Total memory bits : 171,264

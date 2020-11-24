@@ -1,7 +1,7 @@
-Quartus II
-Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
+Quartus II 32-bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 15
-1223
+1490
 OFF
 OFF
 OFF
@@ -10,6 +10,8 @@ ON
 ON
 FV_OFF
 Level2
+0
+0
 0
 0
 VRSM_ON
@@ -605,7 +607,7 @@ db|sopc_compteur.(10).cnf
 # case_insensitive
 # source_file
 altsyncram.tdf
-f8b1b3e6a95fdea61cd86b5880d92761
+5cfd856cb332de15aff17de3bf7c64
 7
 # user_parameter {
 BYTE_SIZE_BLOCK
@@ -1044,20 +1046,20 @@ address_a0
 3
 }
 # include_file {
-altdpram.inc
-2f9e6727b678ffd76e72bc5a95a2630
-aglobal110.inc
-f560f9a992734abc3e37886b3957a26a
-lpm_mux.inc
-dd87bed9959d6126db09970164b7ba6
-stratix_ram_block.inc
-e3a03868917fb3dd57b6ed1dd195f22
-altrom.inc
-192b74eafa8debf2248ea73881e77f91
-lpm_decode.inc
-10da69a8bbd590d66779e7a142f73790
 a_rdenreg.inc
 3fcdce755959d5a8afbe64788d21fb
+altdpram.inc
+2f9e6727b678ffd76e72bc5a95a2630
+altrom.inc
+192b74eafa8debf2248ea73881e77f91
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+stratix_ram_block.inc
+e3a03868917fb3dd57b6ed1dd195f22
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
 altram.inc
 ad5518b39ffd3cf1df377e6360d1c9b6
 }
@@ -1075,7 +1077,7 @@ db|sopc_compteur.(11).cnf
 # case_insensitive
 # source_file
 db|altsyncram_hff1.tdf
-bd80a9e41d4bb11d8ed2073fe3de85c
+48be1b26be2a20f1a4c2118a35ca30ed
 7
 # used_port {
 wren_a
@@ -1381,7 +1383,7 @@ db|sopc_compteur.(13).cnf
 # case_insensitive
 # source_file
 altsyncram.tdf
-f8b1b3e6a95fdea61cd86b5880d92761
+5cfd856cb332de15aff17de3bf7c64
 7
 # user_parameter {
 BYTE_SIZE_BLOCK
@@ -1820,20 +1822,20 @@ address_a0
 3
 }
 # include_file {
-altdpram.inc
-2f9e6727b678ffd76e72bc5a95a2630
-aglobal110.inc
-f560f9a992734abc3e37886b3957a26a
-lpm_mux.inc
-dd87bed9959d6126db09970164b7ba6
-stratix_ram_block.inc
-e3a03868917fb3dd57b6ed1dd195f22
-altrom.inc
-192b74eafa8debf2248ea73881e77f91
-lpm_decode.inc
-10da69a8bbd590d66779e7a142f73790
 a_rdenreg.inc
 3fcdce755959d5a8afbe64788d21fb
+altdpram.inc
+2f9e6727b678ffd76e72bc5a95a2630
+altrom.inc
+192b74eafa8debf2248ea73881e77f91
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+stratix_ram_block.inc
+e3a03868917fb3dd57b6ed1dd195f22
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
 altram.inc
 ad5518b39ffd3cf1df377e6360d1c9b6
 }
@@ -1851,7 +1853,7 @@ db|sopc_compteur.(14).cnf
 # case_insensitive
 # source_file
 db|altsyncram_iff1.tdf
-47ad398daeb166c4a97f7fb347605f
+7061e5e64567c14e3910f67c99790de
 7
 # used_port {
 wren_a
@@ -2329,7 +2331,7 @@ db|sopc_compteur.(19).cnf
 # case_insensitive
 # source_file
 altsyncram.tdf
-f8b1b3e6a95fdea61cd86b5880d92761
+5cfd856cb332de15aff17de3bf7c64
 7
 # user_parameter {
 BYTE_SIZE_BLOCK
@@ -3002,20 +3004,20 @@ address_a0
 3
 }
 # include_file {
-altdpram.inc
-2f9e6727b678ffd76e72bc5a95a2630
-aglobal110.inc
-f560f9a992734abc3e37886b3957a26a
-lpm_mux.inc
-dd87bed9959d6126db09970164b7ba6
-stratix_ram_block.inc
-e3a03868917fb3dd57b6ed1dd195f22
-altrom.inc
-192b74eafa8debf2248ea73881e77f91
-lpm_decode.inc
-10da69a8bbd590d66779e7a142f73790
 a_rdenreg.inc
 3fcdce755959d5a8afbe64788d21fb
+altdpram.inc
+2f9e6727b678ffd76e72bc5a95a2630
+altrom.inc
+192b74eafa8debf2248ea73881e77f91
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+stratix_ram_block.inc
+e3a03868917fb3dd57b6ed1dd195f22
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
 altram.inc
 ad5518b39ffd3cf1df377e6360d1c9b6
 }
@@ -3033,7 +3035,7 @@ db|sopc_compteur.(20).cnf
 # case_insensitive
 # source_file
 db|altsyncram_u972.tdf
-de241df92e93a72db3c6be97eb0a76b
+f856126497bf782cb2b91442cf66e4
 7
 # used_port {
 wren_b
@@ -4245,7 +4247,7 @@ db|sopc_compteur.(36).cnf
 # case_insensitive
 # source_file
 altsyncram.tdf
-f8b1b3e6a95fdea61cd86b5880d92761
+5cfd856cb332de15aff17de3bf7c64
 7
 # user_parameter {
 BYTE_SIZE_BLOCK
@@ -4948,20 +4950,20 @@ address_a0
 3
 }
 # include_file {
-altdpram.inc
-2f9e6727b678ffd76e72bc5a95a2630
-aglobal110.inc
-f560f9a992734abc3e37886b3957a26a
-lpm_mux.inc
-dd87bed9959d6126db09970164b7ba6
-stratix_ram_block.inc
-e3a03868917fb3dd57b6ed1dd195f22
-altrom.inc
-192b74eafa8debf2248ea73881e77f91
-lpm_decode.inc
-10da69a8bbd590d66779e7a142f73790
 a_rdenreg.inc
 3fcdce755959d5a8afbe64788d21fb
+altdpram.inc
+2f9e6727b678ffd76e72bc5a95a2630
+altrom.inc
+192b74eafa8debf2248ea73881e77f91
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+stratix_ram_block.inc
+e3a03868917fb3dd57b6ed1dd195f22
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
 altram.inc
 ad5518b39ffd3cf1df377e6360d1c9b6
 }
@@ -4979,7 +4981,7 @@ db|sopc_compteur.(37).cnf
 # case_insensitive
 # source_file
 db|altsyncram_0a02.tdf
-ce8c37dee59f90cdf9b5fe103ca24c4e
+7f1d8ca8fb9b5437c6f596b2f4521689
 7
 # used_port {
 wren_b
@@ -5694,7 +5696,7 @@ ON
 # case_sensitive
 # source_file
 sld_virtual_jtag_basic.v
-5be5dda4c1e89172f38669eb79c610
+9a76e15f497b79b6836bc2f5715d4ce
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5776,7 +5778,7 @@ ON
 # case_sensitive
 # source_file
 sld_virtual_jtag_basic.v
-5be5dda4c1e89172f38669eb79c610
+9a76e15f497b79b6836bc2f5715d4ce
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -5974,7 +5976,7 @@ db|sopc_compteur.(47).cnf
 # case_insensitive
 # source_file
 scfifo.tdf
-6c5618488fb55065464e8a851e68c3
+7afcae4bbc351f59394fdbe37f7676e2
 7
 # user_parameter {
 AUTO_CARRY_CHAINS
@@ -6141,14 +6143,14 @@ aclr
 3
 }
 # include_file {
-a_i2fifo.inc
-bfe272f05af0cf849bd8b4748efceffe
-aglobal110.inc
-f560f9a992734abc3e37886b3957a26a
-a_dpfifo.inc
-37c2d0bb70d5a3f83a4aa09e62c75080
 a_regfifo.inc
 8b2977668c8752c10a1f1977c9b9ee6
+a_i2fifo.inc
+bfe272f05af0cf849bd8b4748efceffe
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+a_dpfifo.inc
+37c2d0bb70d5a3f83a4aa09e62c75080
 a_fffifo.inc
 aa34dd3c645beefc31a3e4ef186db4
 a_f2fifo.inc
@@ -6169,7 +6171,7 @@ db|sopc_compteur.(48).cnf
 # case_insensitive
 # source_file
 db|scfifo_jr21.tdf
-f94f617d67d872632e2c486469c875a6
+f4ba9f2ee4a56ba0811673732ced9be
 7
 # used_port {
 wrreq
@@ -6272,7 +6274,7 @@ db|sopc_compteur.(49).cnf
 # case_insensitive
 # source_file
 db|a_dpfifo_q131.tdf
-fdc6645dd6d0d6b73018e37da6368316
+addffccb22e9eac988482c5e723418bf
 7
 # used_port {
 wreq
@@ -6378,7 +6380,7 @@ db|sopc_compteur.(50).cnf
 # case_insensitive
 # source_file
 db|a_fefifo_7cf.tdf
-64946ed07d44e9bfa8a2471f49a3c861
+22e266a743ab6cb518ecaadae430de
 7
 # used_port {
 wreq
@@ -6436,7 +6438,7 @@ db|sopc_compteur.(51).cnf
 # case_insensitive
 # source_file
 db|cntr_do7.tdf
-f0f58062e67f1187c397dbe22e95623
+e12fdcaaeefdb324d9b1683b7cf529
 7
 # used_port {
 updown
@@ -6488,7 +6490,7 @@ db|sopc_compteur.(52).cnf
 # case_insensitive
 # source_file
 db|dpram_nl21.tdf
-1f711ec45fb8b5a8ae8cc55d748ac355
+fea3f7d6c4d6770dae66d3ddec7fcc
 7
 # used_port {
 wren
@@ -6603,7 +6605,7 @@ db|sopc_compteur.(53).cnf
 # case_insensitive
 # source_file
 db|altsyncram_r1m1.tdf
-c233c7a97d74ec3a7f3f8783c7a38df
+a05a9ecfdf3f767a6c978e0a699f8ee
 7
 # used_port {
 wren_a
@@ -6718,7 +6720,7 @@ db|sopc_compteur.(54).cnf
 # case_insensitive
 # source_file
 db|cntr_1ob.tdf
-c86f9feaae149b996a2514387c396e5f
+3e643af7f747443225cb96d8fcc77cda
 7
 # used_port {
 sclr
@@ -6817,7 +6819,7 @@ ON
 # case_sensitive
 # source_file
 alt_jtag_atlantic.v
-d86551e05817d27f31e31fe2c53f393e
+8ac263c3c47663c1457066294dc3239b
 8
 # internal_option {
 IP_SHOW_ELABORATION_MESSAGES
@@ -7113,7 +7115,7 @@ db|sopc_compteur.(61).cnf
 # case_insensitive
 # source_file
 altsyncram.tdf
-f8b1b3e6a95fdea61cd86b5880d92761
+5cfd856cb332de15aff17de3bf7c64
 7
 # user_parameter {
 BYTE_SIZE_BLOCK
@@ -7576,20 +7578,20 @@ address_a0
 3
 }
 # include_file {
-altdpram.inc
-2f9e6727b678ffd76e72bc5a95a2630
-aglobal110.inc
-f560f9a992734abc3e37886b3957a26a
-lpm_mux.inc
-dd87bed9959d6126db09970164b7ba6
-stratix_ram_block.inc
-e3a03868917fb3dd57b6ed1dd195f22
-altrom.inc
-192b74eafa8debf2248ea73881e77f91
-lpm_decode.inc
-10da69a8bbd590d66779e7a142f73790
 a_rdenreg.inc
 3fcdce755959d5a8afbe64788d21fb
+altdpram.inc
+2f9e6727b678ffd76e72bc5a95a2630
+altrom.inc
+192b74eafa8debf2248ea73881e77f91
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+stratix_ram_block.inc
+e3a03868917fb3dd57b6ed1dd195f22
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
 altram.inc
 ad5518b39ffd3cf1df377e6360d1c9b6
 }
@@ -7607,7 +7609,7 @@ db|sopc_compteur.(62).cnf
 # case_insensitive
 # source_file
 db|altsyncram_p3b1.tdf
-bd1282b0a2f81233848ddee760e779a
+517add862814df86ad3f3762a1c256c
 7
 # used_port {
 wren_a
@@ -7995,7 +7997,7 @@ ON
 # case_insensitive
 # source_file
 sld_hub.vhd
-1ece43ac49d8a7c0efc372cb6d8b3a5f
+ff883e3693e9875a90c1a3b2421b1e
 5
 # internal_option {
 IP_SHOW_ELABORATION_MESSAGES
@@ -8070,7 +8072,7 @@ ON
 # case_insensitive
 # source_file
 sld_hub.vhd
-1ece43ac49d8a7c0efc372cb6d8b3a5f
+ff883e3693e9875a90c1a3b2421b1e
 5
 # internal_option {
 IP_SHOW_ELABORATION_MESSAGES
@@ -8117,7 +8119,7 @@ ON
 # case_insensitive
 # source_file
 sld_rom_sr.vhd
-1b22dddef98ea9f9486572028b88d8
+c845566d8a447beac536d5d21c94793
 5
 # internal_option {
 IP_SHOW_ELABORATION_MESSAGES

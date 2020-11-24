@@ -1,4 +1,7 @@
 <sld_project_info>
+  <file_info>
+    <file checksum="0x0025A804" device="EP4CE22F17C6" path="sopc_compteur.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
   <hub_info ir_width="2" node_count="2"/>
   <node_info>
     <node hpath="mon_sopc:inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="0" mfg_id="70" node_id="34" sld_node_info="0x19104600" version="3">
