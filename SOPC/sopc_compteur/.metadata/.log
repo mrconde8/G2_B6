@@ -1,0 +1,61 @@
+!SESSION 2020-12-13 15:24:38.585 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-12-13 15:27:15.795
+!MESSAGE Indexed 'test_boutonsLeds_bsp' (78 sources, 57 headers) in 1,86 sec: 926 declarations; 2 209 references; 113 unresolved inclusions; 5 syntax errors; 195 unresolved names (5,86 %)
+!SESSION 2020-12-13 15:31:24.023 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-12-13 15:34:07.383
+!MESSAGE Indexed 'test_bouronLeds_bsp' (78 sources, 57 headers) in 1,90 sec: 926 declarations; 2 209 references; 113 unresolved inclusions; 5 syntax errors; 195 unresolved names (5,86 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-12-13 15:34:10.974
+!MESSAGE Indexed 'test_bouronLeds' (1 sources, 13 headers) in 0,03 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00 %)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-13 15:36:09.017
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11020 --id=0x0 --timestamp=1603179190]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-13 15:36:13.584
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11020 --id=0x0 --timestamp=1603179190 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/sopc_compteur/software/test_bouronLeds/test_bouronLeds.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-13 15:39:10.066
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11020 --id=0x0 --timestamp=1603179190]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-13 15:39:14.016
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11020 --id=0x0 --timestamp=1603179190 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/sopc_compteur/software/test_bouronLeds/test_bouronLeds.elf]
+!SESSION 2020-12-13 16:06:55.562 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-13 16:08:52.089
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11020 --id=0x0 --timestamp=1603179190]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-13 16:08:56.161
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11020 --id=0x0 --timestamp=1603179190 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/sopc_compteur/software/test_bouronLeds/test_bouronLeds.elf]
+!SESSION 2020-12-13 16:20:56.091 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-13 16:21:45.479
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11020 --id=0x0 --timestamp=1603179190]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-13 16:21:50.870
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11020 --id=0x0 --timestamp=1603179190 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/sopc_compteur/software/test_bouronLeds/test_bouronLeds.elf]
