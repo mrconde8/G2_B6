@@ -1,7 +1,7 @@
 SYSTEM mon_sopc
 {
-   System_Wizard_Version = "11.01";
-   System_Wizard_Build = "208";
+   System_Wizard_Version = "11.12";
+   System_Wizard_Build = "259";
    Builder_Application = "sopc_builder_ca";
    WIZARD_SCRIPT_ARGUMENTS 
    {
@@ -139,7 +139,7 @@ SYSTEM mon_sopc
             Entry sram/s1
             {
                address = "0x00008000";
-               span = "0x00004e20";
+               span = "0x00005000";
                is_bridge = "0";
             }
          }
@@ -497,7 +497,7 @@ SYSTEM mon_sopc
             Entry sram/s1
             {
                address = "0x00008000";
-               span = "0x00004e20";
+               span = "0x00005000";
                is_bridge = "0";
             }
             Entry boutons/s1
@@ -737,7 +737,7 @@ SYSTEM mon_sopc
          germs_monitor_id = "";
       }
       class = "altera_nios2";
-      class_version = "7.08110";
+      class_version = "7.08111";
       SYSTEM_BUILDER_INFO 
       {
          Is_Enabled = "1";
@@ -746,7 +746,7 @@ SYSTEM mon_sopc
          Parameters_Signature = "";
          Is_CPU = "1";
          Instantiate_In_System_Module = "1";
-         Required_Device_Family = "STRATIX,STRATIXGX,STRATIXII,STRATIXIIGX,STRATIXIIGXLITE,STRATIXIII,STRATIXIV,STRATIXV,CYCLONE,CYCLONEII,CYCLONEIII,CYCLONEIVE,HARDCOPYIII,ARRIAII,ARRIAIIGZ,TARPON,HARDCOPYIV,STINGRAY";
+         Required_Device_Family = "STRATIX,STRATIXGX,STRATIXII,STRATIXIIGX,STRATIXIIGXLITE,STRATIXIII,STRATIXIV,STRATIXV,CYCLONE,CYCLONEII,CYCLONEIII,CYCLONEIVE,CYCLONEV,HARDCOPYIII,ARRIAII,ARRIAIIGZ,ARRIAV,TARPON,HARDCOPYIV,STINGRAY";
          Default_Module_Name = "cpu";
          Top_Level_Ports_Are_Enumerated = "1";
          View 
@@ -1311,7 +1311,7 @@ SYSTEM mon_sopc
             Address_Alignment = "dynamic";
             Well_Behaved_Waitrequest = "0";
             Is_Nonvolatile_Storage = "0";
-            Address_Span = "20000";
+            Address_Span = "20480";
             Read_Latency = "1";
             Is_Memory_Device = "1";
             Maximum_Pending_Read_Transactions = "0";
@@ -1363,7 +1363,7 @@ SYSTEM mon_sopc
          Writeable = "1";
          dual_port = "0";
          single_clock_operation = "0";
-         Size_Value = "20000";
+         Size_Value = "20480";
          Size_Multiple = "1";
          use_shallow_mem_blocks = "0";
          init_mem_content = "1";
@@ -1388,7 +1388,7 @@ SYSTEM mon_sopc
                sram 
                {
                   Command1 = "@echo Post-processing to create $(notdir $@)";
-                  Command2 = "elf2hex $(ELF) 0x00008000 0xCE1F --width=32 $(QUARTUS_PROJECT_DIR)/sram.hex --create-lanes=0 ";
+                  Command2 = "elf2hex $(ELF) 0x00008000 0xCFFF --width=32 $(QUARTUS_PROJECT_DIR)/sram.hex --create-lanes=0 ";
                   Dependency = "$(ELF)";
                   Target_File = "$(QUARTUS_PROJECT_DIR)/sram.hex";
                }
@@ -1462,7 +1462,7 @@ SYSTEM mon_sopc
          }
       }
       class = "altera_avalon_onchip_memory2";
-      class_version = "7.08110";
+      class_version = "7.08111";
       HDL_INFO 
       {
          Precompiled_Simulation_Library_Files = "";
@@ -1486,7 +1486,7 @@ SYSTEM mon_sopc
             Has_IRQ = "0";
             Read_Wait_States = "0";
             Write_Wait_States = "0";
-            Address_Span = "20000";
+            Address_Span = "20480";
             Read_Latency = "1";
             Is_Channel = "1";
             Is_Enabled = "0";
@@ -1600,7 +1600,7 @@ SYSTEM mon_sopc
          }
       }
       class = "altera_avalon_pio";
-      class_version = "7.08110";
+      class_version = "7.08111";
       SYSTEM_BUILDER_INFO 
       {
          Is_Enabled = "1";
@@ -1768,7 +1768,7 @@ SYSTEM mon_sopc
          }
       }
       class = "altera_avalon_pio";
-      class_version = "7.08110";
+      class_version = "7.08111";
       SYSTEM_BUILDER_INFO 
       {
          Is_Enabled = "1";
@@ -1891,7 +1891,7 @@ SYSTEM mon_sopc
          }
       }
       class = "altera_avalon_sysid";
-      class_version = "7.08110";
+      class_version = "7.08111";
       SYSTEM_BUILDER_INFO 
       {
          Date_Modified = "";
@@ -1903,7 +1903,7 @@ SYSTEM mon_sopc
          Has_Clock = "1";
          View 
          {
-            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5F8E92B6</b> (timestamp: Tue Oct 20, 2020 @9:33 AM)";
+            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5FD630B1</b> (timestamp: Sun Dec 13, 2020 @4:18 PM)";
             MESSAGES 
             {
             }
@@ -1912,7 +1912,7 @@ SYSTEM mon_sopc
       WIZARD_SCRIPT_ARGUMENTS 
       {
          id = "0u";
-         timestamp = "1603179190u";
+         timestamp = "1607872689u";
          regenerate_values = "0";
          MAKE 
          {
@@ -1921,7 +1921,7 @@ SYSTEM mon_sopc
                verifysysid 
                {
                   All_Depends_On = "0";
-                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00011020 --id=0 --timestamp=1603179190";
+                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00011020 --id=0 --timestamp=1607872689";
                   Is_Phony = "1";
                   Target_File = "dummy_verifysysid_file";
                }
@@ -2077,7 +2077,7 @@ SYSTEM mon_sopc
          }
       }
       class = "altera_avalon_jtag_uart";
-      class_version = "7.08110";
+      class_version = "7.08111";
       iss_model_name = "altera_avalon_jtag_uart";
       WIZARD_SCRIPT_ARGUMENTS 
       {

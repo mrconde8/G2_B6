@@ -8,5 +8,7 @@ set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu_0.oc
 # sysid
 # jtag_uart_0
 # null
-set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID 00000000000000E00000017544ED6583 
- 
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "EED5642CF849000001765CAEA161"
+set_global_assignment -entity "mon_sopc" -name IP_TOOL_NAME "sopc"
+set_global_assignment -entity "mon_sopc" -name IP_TOOL_VERSION "11.1sp2"
+set_global_assignment -entity "mon_sopc" -name IP_TOOL_ENV "sopc"

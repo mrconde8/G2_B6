@@ -81,25 +81,37 @@
 #include "sys/alt_stdio.h"
 #include "system.h"
 #include "stdio.h"
+#include "unistd.h"
 
 #define freq (unsigned int *) AVALON_PWM_0_BASE
 #define duty (unsigned int *) (AVALON_PWM_0_BASE + 4)
 #define ctrl (unsigned int *) (AVALON_PWM_0_BASE + 8)
 #define leds (unsigned int *) (LEDS_BASE)
-#define in_freq_anemo (unsigned int *)ANEMO_SOPC_0_BASE
+#define config (unsigned int *)ANEMO_SOPC_0_BASE
+#define code (unsigned int *)(ANEMO_SOPC_0_BASE +4)
 
 
+void delay(volatile long unsigned valeur)
+{
+	while(valeur--);
+}
 int main()
 { 
   alt_putstr("Hello from Nios II!\n");
 
-  *freq = 0x17D7840; //0x2FAF080; //0x0400; // divise clk par 1024
-   *duty = 0x0BEBC20;   //0x17D7840;  //0x0200 // RC = 50%
+  *freq = 0x3D090; //0x2FAF080; //0x0400; // divise clk par 250000 pour avoir la valeur de la freq anemo= 200hz
+   *duty = 0x200;   //0x17D7840;  //0x0200 // RC = 50%
    *ctrl = 0x03;
-   *in_freq_anemo = *freq;
-
-  /* Event loop never exits. */
-  while (1);
+  *config=0x03;
+  int data_anemometre;
+  data_anemometre= (*code)&0xff;
+   /* Event loop never exits. */
+  while (1)
+  {
+	  printf("affiche data_anemometre: %d \n ",data_anemometre);
+	  delay(5000000);
+	  //usleep(1000000);
+  }
 
   return 0;
 }

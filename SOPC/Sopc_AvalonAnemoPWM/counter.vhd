@@ -4,7 +4,7 @@ use IEEE.std_logic_unsigned.all;
 
 entity counter is
 	port (
-		reset_n : in std_logic;
+		raz_n : in std_logic;
 		fin_count : in std_logic;
 		f_anemo : in std_logic;
 		speed : out std_logic_vector(7 downto 0)
@@ -20,7 +20,7 @@ architecture arch_counter of counter IS
 	---------- Counter anemo process
 	compteur: process (f_anemo, fin_count) 
 	begin
-		if reset_n = '0' then
+		if raz_n = '0' then
 			count <= (others => '0');
 		elsif rising_edge(f_anemo) then
 			count <= count + 1;	

@@ -54,22 +54,6 @@ applicable agreement for further details.
 	(annotation_block (location)(rect 184 448 232 464))
 )
 (pin
-	(input)
-	(rect -24 256 144 272)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "ferq_anemo" (rect 5 0 65 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
 	(output)
 	(rect 1056 288 1232 304)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -102,7 +86,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 504 184 944 392)
+	(rect 472 184 912 392)
 	(text "AnemoAvalon" (rect 4 0 97 16)(font "Arial" (font_size 10)))
 	(text "inst2" (rect 4 192 27 204)(font "Arial" ))
 	(port
@@ -169,11 +153,11 @@ applicable agreement for further details.
 )
 (connector
 	(pt 456 216)
-	(pt 504 216)
+	(pt 472 216)
 )
 (connector
 	(pt 304 232)
-	(pt 504 232)
+	(pt 472 232)
 )
 (connector
 	(pt 360 424)
@@ -182,14 +166,35 @@ applicable agreement for further details.
 )
 (connector
 	(pt 360 328)
-	(pt 504 328)
+	(pt 472 328)
 	(bus)
 )
 (connector
-	(pt 944 296)
+	(pt 80 -48)
+	(pt 72 -48)
+)
+(connector
+	(pt 88 264)
+	(pt 88 592)
+)
+(connector
+	(pt 88 592)
+	(pt 968 592)
+)
+(connector
+	(pt 968 592)
+	(pt 968 296)
+)
+(connector
+	(pt 912 296)
+	(pt 968 296)
+)
+(connector
+	(pt 968 296)
 	(pt 1056 296)
 )
 (connector
-	(pt 144 264)
-	(pt 504 264)
+	(pt 88 264)
+	(pt 472 264)
 )
+(junction (pt 968 296))

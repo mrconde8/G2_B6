@@ -1,5 +1,5 @@
 Flow report for avalonPWM
-Tue Nov 24 00:36:12 2020
+Sun Dec 13 17:00:58 2020
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -38,18 +38,18 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Flow Summary                                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 24 00:36:08 2020         ;
+; Flow Status                        ; Successful - Sun Dec 13 17:00:51 2020         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; avalonPWM                                     ;
 ; Top-level Entity Name              ; mon_sopc                                      ;
 ; Family                             ; Cyclone IV E                                  ;
 ; Device                             ; EP4CE22F17C6                                  ;
 ; Timing Models                      ; Final                                         ;
-; Total logic elements               ; 1,695 / 22,320 ( 8 % )                        ;
-;     Total combinational functions  ; 1,538 / 22,320 ( 7 % )                        ;
-;     Dedicated logic registers      ; 873 / 22,320 ( 4 % )                          ;
-; Total registers                    ; 873                                           ;
-; Total pins                         ; 5 / 154 ( 3 % )                               ;
+; Total logic elements               ; 1,696 / 22,320 ( 8 % )                        ;
+;     Total combinational functions  ; 1,540 / 22,320 ( 7 % )                        ;
+;     Dedicated logic registers      ; 874 / 22,320 ( 4 % )                          ;
+; Total registers                    ; 874                                           ;
+; Total pins                         ; 4 / 154 ( 3 % )                               ;
 ; Total virtual pins                 ; 0                                             ;
 ; Total memory bits                  ; 175,104 / 608,256 ( 29 % )                    ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                               ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/24/2020 00:35:33 ;
+; Start date & time ; 12/13/2020 16:59:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; avalonPWM           ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                         ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+-------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 4459183043949.160617453303244 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 4459183043949.160787518530836 ; --            ; --          ; --         ;
 ; IP_TOOL_ENV                         ; sopc                          ; --            ; AnemoAvalon ; --         ;
 ; IP_TOOL_ENV                         ; sopc                          ; --            ; sopcPWM     ; --         ;
 ; IP_TOOL_NAME                        ; sopc                          ; --            ; AnemoAvalon ; --         ;
@@ -97,11 +97,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 378 MB              ; 00:00:14                           ;
-; Fitter                    ; 00:00:13     ; 1.0                     ; 456 MB              ; 00:00:11                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 344 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 359 MB              ; 00:00:06                           ;
-; Total                     ; 00:00:38     ; --                      ; --                  ; 00:00:34                           ;
+; Analysis & Synthesis      ; 00:00:29     ; 1.0                     ; 380 MB              ; 00:00:22                           ;
+; Fitter                    ; 00:00:25     ; 1.0                     ; 457 MB              ; 00:00:22                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 344 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:12     ; 1.0                     ; 359 MB              ; 00:00:10                           ;
+; Total                     ; 00:01:11     ; --                      ; --                  ; 00:00:59                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

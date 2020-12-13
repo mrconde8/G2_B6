@@ -5,7 +5,7 @@ use IEEE.std_logic_unsigned.all;
 entity HZ_Gen is
 	port (
 		clk : in std_logic;
-		reset_n : in std_logic;
+		raz_n : in std_logic;
 		f_out : out std_logic
 	);
 end entity;
@@ -15,9 +15,9 @@ architecture arch_divider of HZ_Gen IS
 	signal status : std_logic;
 	
 	begin
-	    HZ_Gen: process (clk, reset_n) 
+	    HZ_Gen: process (clk, raz_n) 
 		begin
-		if reset_n = '0' then
+		if raz_n = '0' then
 			counter <= (others => '0');
 			status <= '0';
 		elsif clk'event and clk = '1' then

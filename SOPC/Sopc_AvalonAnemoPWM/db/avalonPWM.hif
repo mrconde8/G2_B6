@@ -8147,152 +8147,6 @@ AnemoAvalon:inst2|Anemo_SOPC_0:the_Anemo_SOPC_0
 
 # end
 # entity
-Anemo_SOPC
-# storage
-db|avalonPWM.(55).cnf
-db|avalonPWM.(55).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-anemo_sopc.vhd
-e4be92d8e0db64ef74afaefb7cd84755
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(writedata)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(readdata)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-AnemoAvalon:inst2|Anemo_SOPC_0:the_Anemo_SOPC_0|Anemo_SOPC:anemo_sopc_0
-}
-# macro_sequence
-
-# end
-# entity
-HZ_Gen
-# storage
-db|avalonPWM.(70).cnf
-db|avalonPWM.(70).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hz_gen.vhd
-f117a376ffca59cba5ff68fb1e2d16
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-AnemoAvalon:inst2|Anemo_SOPC_0:the_Anemo_SOPC_0|Anemo_SOPC:anemo_sopc_0|HZ_Gen:b2v_inst
-}
-# macro_sequence
-
-# end
-# entity
-counter
-# storage
-db|avalonPWM.(72).cnf
-db|avalonPWM.(72).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-counter.vhd
-de58908c791fe8d1076e852eadf253
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(speed)
-7 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-AnemoAvalon:inst2|Anemo_SOPC_0:the_Anemo_SOPC_0|Anemo_SOPC:anemo_sopc_0|counter:b2v_inst1
-}
-# macro_sequence
-
-# end
-# entity
-MAE
-# storage
-db|avalonPWM.(73).cnf
-db|avalonPWM.(73).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-mae.vhd
-a3926f3b9b3981b74b1ad2becd1160
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_in)
-7 downto 0
-PARAMETER_STRING
-USR
- constraint(data_value)
-7 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-AnemoAvalon:inst2|Anemo_SOPC_0:the_Anemo_SOPC_0|Anemo_SOPC:anemo_sopc_0|MAE:b2v_inst6
-}
-# macro_sequence
-
-# end
-# entity
 avalon_pwm_0_avalon_slave_0_arbitrator
 # storage
 db|avalonPWM.(74).cnf
@@ -9362,6 +9216,152 @@ DEF
 
 # end
 # entity
+Anemo_SOPC
+# storage
+db|avalonPWM.(55).cnf
+db|avalonPWM.(55).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+anemo_sopc.vhd
+315a7fcf209c5ac376dbd276732f1ff
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(writedata)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(readdata)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+AnemoAvalon:inst2|Anemo_SOPC_0:the_Anemo_SOPC_0|Anemo_SOPC:anemo_sopc_0
+}
+# macro_sequence
+
+# end
+# entity
+HZ_Gen
+# storage
+db|avalonPWM.(70).cnf
+db|avalonPWM.(70).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hz_gen.vhd
+b8e6759591bd1297eb707f365f8962
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+AnemoAvalon:inst2|Anemo_SOPC_0:the_Anemo_SOPC_0|Anemo_SOPC:anemo_sopc_0|HZ_Gen:b2v_inst
+}
+# macro_sequence
+
+# end
+# entity
+counter
+# storage
+db|avalonPWM.(72).cnf
+db|avalonPWM.(72).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+counter.vhd
+9f8726afd0d38e735069f2f5fe14146
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(speed)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+AnemoAvalon:inst2|Anemo_SOPC_0:the_Anemo_SOPC_0|Anemo_SOPC:anemo_sopc_0|counter:b2v_inst1
+}
+# macro_sequence
+
+# end
+# entity
+MAE
+# storage
+db|avalonPWM.(73).cnf
+db|avalonPWM.(73).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mae.vhd
+9e2dbce2f3278fb1a85b5ffbe1611845
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_value)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+AnemoAvalon:inst2|Anemo_SOPC_0:the_Anemo_SOPC_0|Anemo_SOPC:anemo_sopc_0|MAE:b2v_inst6
+}
+# macro_sequence
+
+# end
+# entity
 mon_sopc
 # storage
 db|avalonPWM.(0).cnf
@@ -9369,7 +9369,7 @@ db|avalonPWM.(0).cnf
 # case_insensitive
 # source_file
 mon_sopc.bdf
-04ec595b1d389deb3012ab1a642ce6
+a37a68092437eb8ba7484ac86ce7d4
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

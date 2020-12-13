@@ -18,6 +18,9 @@
 library altera;
 use altera.altera_europa_support_lib.all;
 
+library altera_mf;
+use altera_mf.altera_mf_components.all;
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
@@ -41,7 +44,7 @@ architecture europa of sysid is
 begin
 
   --control_slave, which is an e_avalon_slave
-  readdata <= A_WE_StdLogicVector((std_logic'(address) = '1'), std_logic_vector'("01011111100011101001001010110110"), std_logic_vector'("00000000000000000000000000000000"));
+  readdata <= A_WE_StdLogicVector((std_logic'(address) = '1'), std_logic_vector'("01011111110101100011000010110001"), std_logic_vector'("00000000000000000000000000000000"));
 
 end europa;
 
