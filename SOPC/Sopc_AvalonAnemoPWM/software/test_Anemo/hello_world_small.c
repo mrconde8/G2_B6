@@ -108,7 +108,7 @@ int main()
    /* Event loop never exits. */
   while (1)
   {
-	  printf("affiche data_anemometre: %d \n ",data_anemometre);
+	  printf("affiche data_anemometre: %d Km/h\n ",data_anemometre);
 	  delay(5000000);
 	  //usleep(1000000);
   }

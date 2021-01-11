@@ -1,0 +1,276 @@
+!SESSION 2020-12-14 22:34:43.662 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-12-14 22:36:32.005
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.importAddNode(XmlProjectDescriptionStorage.java:850)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.createXmlElementCopy(XmlProjectDescriptionStorage.java:823)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.copyElement(XmlProjectDescriptionStorage.java:845)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.createWritableDescription(XmlProjectDescriptionStorage.java:329)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:280)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:416)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:398)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:393)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:386)
+	at org.eclipse.cdt.core.model.CoreModel.getProjectDescription(CoreModel.java:1424)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getLanguage(TranslationUnit.java:713)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getLanguages(ProjectIndexerInputAdapter.java:183)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.extractFiles(AbstractIndexerTask.java:393)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:335)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:127)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMRebuildTask.run(PDOMRebuildTask.java:84)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-12-14 22:36:32.026
+!MESSAGE An internal error occurred during: "C/C++ Indexer".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.importAddNode(XmlProjectDescriptionStorage.java:850)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.createXmlElementCopy(XmlProjectDescriptionStorage.java:823)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.copyElement(XmlProjectDescriptionStorage.java:845)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.createWritableDescription(XmlProjectDescriptionStorage.java:329)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:280)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:416)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:398)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:393)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:386)
+	at org.eclipse.cdt.core.model.CoreModel.getProjectDescription(CoreModel.java:1424)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getLanguage(TranslationUnit.java:713)
+	at org.eclipse.cdt.internal.core.pdom.indexer.ProjectIndexerInputAdapter.getLanguages(ProjectIndexerInputAdapter.java:183)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.extractFiles(AbstractIndexerTask.java:393)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:335)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:127)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMRebuildTask.run(PDOMRebuildTask.java:84)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-12-14 22:36:39.882
+!MESSAGE Indexed 'gestions_btns' (1 sources, 13 headers) in 0,61 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00 %)
+!SESSION 2020-12-14 22:37:13.632 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -data D:\Documents\M2-SME\BE_VHDL\Git\G2_B6\SOPC\SOPC_GB -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 22:41:09.365
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 22:41:13.214
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 22:46:04.496
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 22:46:08.367
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 22:48:20.357
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 22:48:24.311
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 22:59:05.797
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 22:59:09.941
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+!SESSION 2020-12-14 23:56:48.611 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 23:59:27.598
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 23:59:32.628
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-15 00:08:28.266
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-15 00:08:33.036
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+!SESSION 2020-12-26 17:55:48.374 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -data D:\Documents\M2-SME\BE_VHDL\Git\G2_B6\SOPC\SOPC_GB -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 17:56:48.906
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 17:56:51.600
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:13:17.583
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:13:19.993
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:34:06.319
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:34:08.790
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:37:42.394
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:37:43.498
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:37:45.925
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:45:25.612
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:45:26.753
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:45:29.158
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:53:39.062
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:53:41.496
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:56:33.711
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 18:56:36.177
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 19:14:56.625
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11008 --id=0x0 --timestamp=1607980753]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 19:15:00.566
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11008 --id=0x0 --timestamp=1607980753 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2020-12-26 19:55:13.943
+!MESSAGE The system console model is invalid. Cannot launch.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 19:56:20.564
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 19:56:24.672
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 20:00:38.208
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-26 20:00:42.248
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+!SESSION 2021-01-10 16:17:31.711 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:19:23.774
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:19:26.469
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:29:34.410
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:29:36.912
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:30:14.479
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:30:16.956
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:34:45.589
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:34:46.738
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:34:49.239
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:38:06.709
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:38:09.264
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:38:36.881
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:38:38.061
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:38:40.549
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:39:48.794
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:39:51.318
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:40:48.592
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:40:51.155
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:45:22.649
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:45:25.261
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:48:39.930
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:48:41.085
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:48:43.603
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:56:59.517
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:57:01.203
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:57:05.179
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:57:54.708
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:57:56.849
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11018 --id=0x0 --timestamp=1609008448]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-01-10 16:58:00.780
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11018 --id=0x0 --timestamp=1609008448 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/software/gestions_btns/gestions_btns.elf]

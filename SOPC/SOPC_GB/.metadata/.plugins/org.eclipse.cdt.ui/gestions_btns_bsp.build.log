@@ -1,0 +1,5 @@
+
+**** Clean-only build of configuration Nios II for project gestions_btns_bsp ****
+
+make clean 
+[BSP clean complete]

@@ -1,0 +1,75 @@
+Altera SOPC Builder Version 11.12 Build 259
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2020.12.26 19:48:15 (*) mk_custom_sdk starting
+# 2020.12.26 19:48:15 (*) Reading project D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/mon_sopc.ptf.
+
+# 2020.12.26 19:48:15 (*) Finding all CPUs
+# 2020.12.26 19:48:15 (*) Finding all available components
+# 2020.12.26 19:48:15 (*) Reading D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/.sopc_builder/install.ptf
+
+# 2020.12.26 19:48:15 (*) Found 63 components
+
+# 2020.12.26 19:48:16 (*) Finding all peripherals
+
+# 2020.12.26 19:48:16 (*) Finding software components
+
+# 2020.12.26 19:48:16 (*) (Legacy SDK Generation Skipped)
+# 2020.12.26 19:48:16 (*) (All TCL Script Generation Skipped)
+# 2020.12.26 19:48:16 (*) (No Libraries Built)
+# 2020.12.26 19:48:16 (*) (Contents Generation Skipped)
+# 2020.12.26 19:48:16 (*) mk_custom_sdk finishing
+
+# 2020.12.26 19:48:16 (*) Starting generation for system: mon_sopc.
+
+.
+.
+.
+.
+
+# 2020.12.26 19:48:16 (*) Running Generator Program for cpu_0
+
+# 2020.12.26 19:48:20 (*) Starting Nios II generation
+# 2020.12.26 19:48:20 (*)   Checking for plaintext license.
+# 2020.12.26 19:48:21 (*)   Couldn't query license setup in Quartus directory c:/altera/11.1sp2/quartus
+# 2020.12.26 19:48:21 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2020.12.26 19:48:21 (*)   LM_LICENSE_FILE environment variable is empty
+# 2020.12.26 19:48:21 (*)   Plaintext license not found.
+# 2020.12.26 19:48:21 (*)   No license required to generate encrypted Nios II/e.
+
+# 2020.12.26 19:48:21 (*)   Getting CPU configuration settings
+# 2020.12.26 19:48:21 (*)   Elaborating CPU configuration settings
+# 2020.12.26 19:48:21 (*)   Creating all objects for CPU
+# 2020.12.26 19:48:23 (*)   Generating HDL from CPU objects
+# 2020.12.26 19:48:23 (*)   Creating plain-text HDL
+# 2020.12.26 19:48:27 (*) Done Nios II generation
+
+# 2020.12.26 19:48:27 (*) Running Generator Program for sram
+
+# 2020.12.26 19:48:29 (*) Running Generator Program for jtag_uart_0
+
+# 2020.12.26 19:48:30 (*) Running Generator Program for sysid
+
+
+# 2020.12.26 19:48:30 (*) Making arbitration and system (top) modules.
+
+# 2020.12.26 19:48:33 (*) Generating Quartus symbol for top level: mon_sopc
+
+# 2020.12.26 19:48:33 (*) Symbol D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/mon_sopc.bsf already exists, no need to regenerate
+# 2020.12.26 19:48:33 (*) Creating command-line system-generation script: D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/mon_sopc_generation_script
+
+# 2020.12.26 19:48:33 (*) Running setup for HDL simulator: modelsim
+
+
+# 2020.12.26 19:48:34 (*) Completed generation for system: mon_sopc.
+# 2020.12.26 19:48:34 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/mon_sopc.ptf 
+  System HDL Model : D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/mon_sopc.vhd 
+  System Generation Script : D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/mon_sopc_generation_script 
+
+# 2020.12.26 19:48:34 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

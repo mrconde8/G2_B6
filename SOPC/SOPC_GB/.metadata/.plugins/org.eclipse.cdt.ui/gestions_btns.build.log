@@ -1,0 +1,8 @@
+
+**** Build of configuration Nios II for project gestions_btns ****
+
+make all 
+Info: Building ../gestions_btns_bsp/
+make --no-print-directory -C ../gestions_btns_bsp/
+[BSP build complete]
+[gestions_btns build complete]

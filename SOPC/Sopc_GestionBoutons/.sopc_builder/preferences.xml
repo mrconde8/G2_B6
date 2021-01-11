@@ -4,7 +4,7 @@
  <systemtable filter="Default">
   <columns>
    <opcodeName visible="0" />
-   <connections preferredWidth="47" />
+   <connections preferredWidth="30" />
    <irq preferredWidth="34" />
    <export visible="0" />
   </columns>
@@ -16,6 +16,6 @@
    <frequency preferredWidth="202" />
   </columns>
  </clocktable>
- <window width="1137" height="771" x="309" y="81" />
+ <window width="1137" height="771" x="147" y="269" />
  <library expandedCategories="Project,Project/Other,Library" />
 </preferences>

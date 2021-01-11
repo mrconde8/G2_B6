@@ -1,4 +1,2 @@
-13 déc. 2020 16:41:27 com.altera.utilities.Launcher launch
-INFO: Launching:c:/altera/11.1sp2/quartus//bin/quartus_map.exe not_a_project --generate_hdl_interface=D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/avalon_pwm.vhd --source=D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/avalon_pwm.vhd --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/mrcon/AppData/Local/Temp/alt8609_785859865079013461.dir/0001_sopcqmap/
-13 déc. 2020 16:42:35 com.altera.utilities.Launcher launch
-INFO: Launching:c:/altera/11.1sp2/quartus//bin/quartus_map.exe not_a_project --generate_hdl_interface=D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/avalon_pwm.vhd --source=D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/avalon_pwm.vhd --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/mrcon/AppData/Local/Temp/alt8609_785859865079013461.dir/0002_sopcqmap/
+7 janv. 2021 17:15:36 com.altera.utilities.Launcher launch
+INFO: Launching:c:/altera/11.1sp2/quartus//bin/quartus_map.exe not_a_project --generate_hdl_interface=D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/avalon_pwm.vhd --source=D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/avalon_pwm.vhd --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/mrcon/AppData/Local/Temp/alt8634_9143857071599964096.dir/0001_sopcqmap/

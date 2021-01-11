@@ -59,3 +59,66 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY com.altera.sbtgui.launch 1 0 2020-12-13 16:21:50.870
 !MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11020 --id=0x0 --timestamp=1603179190 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/sopc_compteur/software/test_bouronLeds/test_bouronLeds.elf]
+!SESSION 2020-12-14 10:36:55.514 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-12-14 10:39:32.452
+!MESSAGE Indexed 'test_BouLed_bsp' (78 sources, 57 headers) in 1,42 sec: 926 declarations; 2 209 references; 113 unresolved inclusions; 5 syntax errors; 195 unresolved names (5,86 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-12-14 10:39:36.619
+!MESSAGE Indexed 'test_BouLed' (1 sources, 13 headers) in 0,03 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00 %)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 10:41:04.646
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11020 --id=0x0 --timestamp=1607872689]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 10:41:09.057
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11020 --id=0x0 --timestamp=1607872689 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/sopc_compteur/software/test_BouLed/test_BouLed.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 10:42:08.695
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 10:42:10.193
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11020 --id=0x0 --timestamp=1607872689]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 10:42:13.973
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11020 --id=0x0 --timestamp=1607872689 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/sopc_compteur/software/test_BouLed/test_BouLed.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 10:48:38.010
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 10:48:39.202
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11020 --id=0x0 --timestamp=1607872689]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 10:48:41.729
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11020 --id=0x0 --timestamp=1607872689 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/sopc_compteur/software/test_BouLed/test_BouLed.elf]
+!SESSION 2020-12-14 23:02:37.934 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 23:04:38.781
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11020 --id=0x0 --timestamp=1607872689]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 23:04:42.955
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11020 --id=0x0 --timestamp=1607872689 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/sopc_compteur/software/test_BouLed/test_BouLed.elf]
+!SESSION 2020-12-14 23:22:44.696 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 23:25:40.624
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11020 --id=0x0 --timestamp=1607872689]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-14 23:25:44.537
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/11.1sp2/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11020 --id=0x0 --timestamp=1607872689 /cygdrive/d/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/sopc_compteur/software/test_BouLed/test_BouLed.elf]

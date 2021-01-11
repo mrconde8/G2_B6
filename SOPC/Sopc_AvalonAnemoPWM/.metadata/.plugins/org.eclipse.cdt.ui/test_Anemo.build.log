@@ -5,4 +5,8 @@ make all
 Info: Building ../test_Anemo_bsp/
 make --no-print-directory -C ../test_Anemo_bsp/
 [BSP build complete]
-[test_Anemo build complete]
+Info: Creating test_Anemo.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source test_Anemo.elf >test_Anemo.objdump
+      0 [main] sh 488 child_copy: linked dll data write copy failed, 0x2937000..0x2937020, done 0, windows pid 488, Win32 error 998
+/usr/bin/sh: fork: Resource temporarily unavailable
+make: *** [test_Anemo.objdump] Error 128

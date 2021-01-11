@@ -36,7 +36,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world_small.c" partName="hello_world_small.c" path="D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/Sopc_AvalonPWM/software/test_sopc/hello_world_small.c" title="hello_world_small.c" tooltip="test_sopc/hello_world_small.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/test_sopc/hello_world_small.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="56" selectionOffset="2952" selectionTopPixel="1173"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4176" selectionTopPixel="1122"/>
 </editor>
 </editors>
 <views>

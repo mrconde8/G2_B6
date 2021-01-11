@@ -1,0 +1,2 @@
+7 janv. 2021 17:04:47 com.altera.utilities.Launcher launch
+INFO: Launching:c:/altera/11.1sp2/quartus//bin/quartus_map.exe not_a_project --generate_hdl_interface=D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/avalon_Gestion.vhd --source=D:/Documents/M2-SME/BE_VHDL/Git/G2_B6/SOPC/SOPC_GB/avalon_Gestion.vhd --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/mrcon/AppData/Local/Temp/alt8634_9205134745390382707.dir/0001_sopcqmap/
